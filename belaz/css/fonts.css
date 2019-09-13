@@ -9,24 +9,28 @@
 
 @font-face {
     font-family: "ProximaNova";
+     font-display: auto;
     src: url(../fonts/ProximaNova-Regular.woff2) format("woff2"), url(../fonts/ProximaNova-Regular.woff) format("woff");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "ProximaNova";
+     font-display: auto;
     src: url(../fonts/ProximaNova-Bold.woff2) format("woff2"), url(../fonts/ProximaNova-Bold.woff) format("woff");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "ProximaNova";
+     font-display: auto;
     src: url(../fonts/ProximaNova-Extrabld.woff2) format("woff2"), url(../fonts/ProximaNova-Extrabld.woff) format("woff");
     font-weight: 800;
 }
 
 @font-face {
     font-family: "ProximaNova";
+     font-display: auto;
     src: url(../fonts/ProximaNova-Black.woff2) format("woff2"), url(../fonts/ProximaNova-Black.woff) format("woff");
     font-weight: 900;
 }

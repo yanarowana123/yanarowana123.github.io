@@ -1,7 +1,0 @@
-[2019-9-5 11:38:50] layer "+7 (818) 247-47-25 ": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2019-9-5 11:38:50] layer " +7 (818) 247-47-25 ": Expected Either a default asset specification or a layer asset specification but " " found.
-[2019-9-5 11:38:50] layer "logo.ong": Unsupported extension: ong
-[2019-9-5 11:38:50] layer " +7 (818) 247-47-25 ": Expected Either a default asset specification or a layer asset specification but " " found.
-[2019-9-5 11:38:50] layer "+7 (818) 247-47-25": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2019-9-5 11:38:50] layer "+7 (818) 247-47-25  копия": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2019-9-5 11:38:50] layer "+7(818) 247-47-25": Expected Either a default asset specification or a layer asset specification but "+" found.

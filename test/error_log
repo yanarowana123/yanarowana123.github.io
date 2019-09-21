@@ -1,0 +1,154 @@
+[19-Aug-2017 09:38:41 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:38:41 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:39:35 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:39:35 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:40:30 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:40:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:41:24 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:41:24 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:41:33 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:41:33 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:42:20 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:42:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:43:17 UTC] PHP Warning:  require_once(lib/main.php): failed to open stream: No such file or directory in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 09:43:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'lib/main.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /var/home/btclimit/public_html/rw.php on line 5
+[19-Aug-2017 10:30:10 UTC] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'index/index.tpl'' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatebase.php:127
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase->fetch('index/index.tpl', NULL, NULL, NULL, true)
+#1 /var/home/btclimit/public_html/lib/tplutils.php(112): Smarty_Internal_TemplateBase->display()
+#2 /var/home/btclimit/public_html/module/index/index.php(7): showPage()
+#3 /var/home/btclimit/public_html/rw.php(133): require('/var/home/btcli...')
+#4 {main}
+  thrown in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatebase.php on line 127
+[19-Aug-2017 14:06:31 UTC] PHP Parse error:  syntax error, unexpected '$_GS' (T_VARIABLE) in /var/home/btclimit/public_html/rw.php on line 6
+[19-Aug-2017 14:06:33 UTC] PHP Parse error:  syntax error, unexpected '$_GS' (T_VARIABLE) in /var/home/btclimit/public_html/rw.php on line 6
+[19-Aug-2017 14:06:35 UTC] PHP Parse error:  syntax error, unexpected '$_GS' (T_VARIABLE) in /var/home/btclimit/public_html/rw.php on line 6
+[19-Aug-2017 15:52:20 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'MySQL error: (2006) MySQL server has gone away
+Query: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=0 WHERE cDisabled=0 ORDER BY cID' in /var/home/btclimit/public_html/lib/main.php:23
+Stack trace:
+#0 /var/home/btclimit/public_html/lib/main.php(35): xAbort('MySQL error: (2...')
+#1 /var/home/btclimit/public_html/lib/main.php(46): xSysInfo('MySQL error: (2...', 2)
+#2 /var/home/btclimit/public_html/lib/db.php(165): xSysError('MySQL error: (2...')
+#3 /var/home/btclimit/public_html/lib/db.php(237): HS2_DB->query('SELECT * FROM C...', Array)
+#4 /var/home/btclimit/public_html/module/auth.php(172): HS2_DB->select('Currs LEFT JOIN...', '*', 'cDisabled=0', Array, 'cID')
+#5 /var/home/btclimit/public_html/module/index/index.php(3): require_once('/var/home/btcli...')
+#6 /var/home/btclimit/public_html/rw.php(133): require('/var/home/btcli...')
+#7 {main}
+  thrown in /var/home/btclimit/public_html/lib/main.php on line 23
+[19-Aug-2017 17:15:03 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 102 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:15:49 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 102 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:02 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 101 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:03 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 101 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:05 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 101 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:19 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 96 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_ in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:36 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 96 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_ in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:36 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 96 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_ in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:37 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 96 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_ in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[19-Aug-2017 17:16:46 UTC] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template "tpl/ru/depo/block.stat.tpl"  on line 96 "Программа работает {$stat.worked} дн.&lt;br&gt;"  - Unexpected "*
+"' in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php:627
+Stack trace:
+#0 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3154): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templateparser.php(3219): Smarty_Internal_Templateparser->yy_syntax_error(39, '*\n')
+#2 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_smartytemplatecompiler.php(105): Smarty_Internal_Templateparser->doParse(39, '*\n')
+#3 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php(171): Smarty_Internal_SmartyTemplateCompiler->doCompile('{strip}\n\n      ...')
+#4 /var/home/btclimit/public_html/smarty3/sysplugins/smarty_ in /var/home/btclimit/public_html/smarty3/sysplugins/smarty_internal_templatecompilerbase.php on line 627
+[20-Aug-2017 16:21:24 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'MySQL error: (2006) MySQL server has gone away
+Query: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=0 WHERE cDisabled=0 ORDER BY cID' in /var/home/btclimit/public_html/lib/main.php:23
+Stack trace:
+#0 /var/home/btclimit/public_html/lib/main.php(35): xAbort('MySQL error: (2...')
+#1 /var/home/btclimit/public_html/lib/main.php(46): xSysInfo('MySQL error: (2...', 2)
+#2 /var/home/btclimit/public_html/lib/db.php(165): xSysError('MySQL error: (2...')
+#3 /var/home/btclimit/public_html/lib/db.php(237): HS2_DB->query('SELECT * FROM C...', Array)
+#4 /var/home/btclimit/public_html/module/auth.php(172): HS2_DB->select('Currs LEFT JOIN...', '*', 'cDisabled=0', Array, 'cID')
+#5 /var/home/btclimit/public_html/module/index/index.php(3): require_once('/var/home/btcli...')
+#6 /var/home/btclimit/public_html/rw.php(133): require('/var/home/btcli...')
+#7 {main}
+  thrown in /var/home/btclimit/public_html/lib/main.php on line 23
+[24-Aug-2017 11:07:30 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'MySQL error: (2006) MySQL server has gone away
+Query: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=0 WHERE cDisabled=0 ORDER BY cID' in /var/home/btclimit/public_html/lib/main.php:23
+Stack trace:
+#0 /var/home/btclimit/public_html/lib/main.php(35): xAbort('MySQL error: (2...')
+#1 /var/home/btclimit/public_html/lib/main.php(46): xSysInfo('MySQL error: (2...', 2)
+#2 /var/home/btclimit/public_html/lib/db.php(165): xSysError('MySQL error: (2...')
+#3 /var/home/btclimit/public_html/lib/db.php(237): HS2_DB->query('SELECT * FROM C...', Array)
+#4 /var/home/btclimit/public_html/module/auth.php(172): HS2_DB->select('Currs LEFT JOIN...', '*', 'cDisabled=0', Array, 'cID')
+#5 /var/home/btclimit/public_html/module/index/index.php(3): require_once('/var/home/btcli...')
+#6 /var/home/btclimit/public_html/rw.php(133): require('/var/home/btcli...')
+#7 {main}
+  thrown in /var/home/btclimit/public_html/lib/main.php on line 23
+[24-Aug-2017 11:07:33 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'MySQL error: (2006) MySQL server has gone away
+Query: UPDATE Currs SET `cBal`='4356.18',`cBalTS`='20170824110733' WHERE cCID='PYR'' in /var/home/btclimit/public_html/lib/main.php:23
+Stack trace:
+#0 /var/home/btclimit/public_html/lib/main.php(35): xAbort('MySQL error: (2...')
+#1 /var/home/btclimit/public_html/lib/main.php(46): xSysInfo('MySQL error: (2...', 2)
+#2 /var/home/btclimit/public_html/lib/db.php(165): xSysError('MySQL error: (2...')
+#3 /var/home/btclimit/public_html/lib/db.php(266): HS2_DB->query('UPDATE Currs SE...', Array)
+#4 /var/home/btclimit/public_html/lib/psys.php(3183): HS2_DB->update('Currs', Array, '', 'cCID=?', Array)
+#5 /var/home/btclimit/public_html/module/balance/oncron.php(6): psysOnCron('PYR')
+#6 /var/home/btclimit/public_html/module/cron/index.php(33): include_once('/var/home/btcli...')
+#7 /var/home/btclimit/public_html/rw.php(133): require('/var/home/btcli...')
+#8 {main}
+  thrown in /var/home/btclimit/public_html/lib/main.php on line 23

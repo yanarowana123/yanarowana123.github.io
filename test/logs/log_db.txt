@@ -1,0 +1,18 @@
+- - - - - [25.08.17 17:44:42] - - - - -
+<cron> 5: REPLACE INTO Cfg (`Module`,`Prop`,`Val`) VALUES ('Cron','balance','20170825174937')
+- - - - - [13.09.19 14:18:19] - - - - -
+<cron> 3: SELECT * FROM Currs WHERE cDisabled=0 ORDER BY cID
+- - - - - [13.09.19 14:18:19] - - - - -
+<system> 3: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=1 WHERE cDisabled=0 ORDER BY cID
+- - - - - [13.09.19 20:20:02] - - - - -
+<udp/about> 6: UPDATE Users SET `uLTS`='20190913201956' WHERE uID=1
+- - - - - [13.09.19 20:20:02] - - - - -
+<cron> 6: REPLACE INTO Cfg (`Module`,`Prop`,`Val`) VALUES ('Cron','balance','20190913204956')
+- - - - - [14.09.19 18:25:24] - - - - -
+<news> 4: SELECT COUNT(*) AS _cnt_ FROM News WHERE (nDBegin=0 or nDBegin<='20190914182520') and (nDEnd=0 or nDEnd>='20190914182520')
+- - - - - [15.09.19 15:25:33] - - - - -
+<cron> 3: REPLACE INTO Cfg (`Module`,`Prop`,`Val`) VALUES ('Cron','balance','20190915155530')
+- - - - - [18.09.19 18:17:11] - - - - -
+<index> 10: SELECT * FROM Cfg
+<cron> 5: REPLACE INTO Cfg (`Module`,`Prop`,`Val`) VALUES ('Cron','depo','20190918181812')
+<index> 5: SELECT * FROM Users LEFT JOIN AddInfo ON auID=uID WHERE uID=1

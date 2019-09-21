@@ -1,0 +1,23 @@
+.banners-list-item img {
+    max-height: 69%;
+}
+.header__menu ul{
+	text-align:center;
+}
+.header__menu ul li {
+    display: inline-block;
+	float:none;
+}
+.header__menu.lang_de ul li a {
+    font-size: 15px;
+}
+.header__contactItem a {
+    font-size: 17px;
+}
+.fcItem {
+    float: none;
+    margin-top: 0;
+}
+.footer__payments img {
+    margin-bottom: 20px;
+}

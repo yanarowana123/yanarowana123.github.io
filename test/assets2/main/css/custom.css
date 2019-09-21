@@ -1,0 +1,66 @@
+.lang {
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: -18px;
+  z-index: 4;
+}
+
+.lang .selected-lang {
+  cursor: pointer;
+  padding-right: 12px;
+  position: relative;
+}
+
+.lang .selected-lang:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/icon/arrow-down-gray.html) no-repeat 50%;
+  background-size: 6px;
+  height: 24px;
+  width: 10px;
+}
+
+.lang .selected-lang span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.lang-list {
+  display: none;
+  padding: 5px 0;
+}
+
+.lang-list li {
+  list-style-type: none;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.lang-list a {
+  display: block;
+  text-decoration: none;
+}
+
+.lang-list a span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.header-user{
+	text-align:center;
+}
+section.investors .select_plan_wrap .tarif_descr {
+    top: 34%;
+}
+.header-user.lang_vn .header-user__link {
+    padding: 8px 6px 9px;
+}

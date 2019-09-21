@@ -1,0 +1,10 @@
+Ваш аккаунт готов к работе
+Timeweb	
+
+Логин: cc17177
+Пароль: L66QkgjvxQoR
+
+Панель: https://hosting.timeweb.ru/
+
+FTP: ftp://vh212.timeweb.ru
+Логин-Пароль для Панели и FTP совпадают

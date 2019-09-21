@@ -1,0 +1,99 @@
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+		
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		
+		right:0;
+		
+		background:  url(images/men.png)/*tpa=http://demo75.blitz-market.ru/theme/demo75/assets/common/css/images/men.png*/ no-repeat right 20px center;
+		height:50px;
+		
+		
+		
+	}
+	.nav li {
+		display: none; /* скрыть все <li> пункты */
+		margin: 0;
+		background:rgba(57, 50, 61, 1) url(theme/demo75/assets/common/css/images/icon-check.png/index.htm)/*tpa=http://demo75.blitz-market.ru/theme/demo75/assets/common/css/theme/demo75/assets/common/css/images/icon-check.png*/ no-repeat left 10px center;
+		position:relative;
+		
+	}
+	.nav .current {
+		display: block; /* показывать только текущие активные <li> пункты */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;position:relative;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+ 
+	/* при наведении на пункты меню */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		
+		
+		
+	}
+	.nav ul:hover .current {
+		background: url(theme/demo75/assets/common/css/images/icon-check.png/index.htm)/*tpa=http://demo75.blitz-market.ru/theme/demo75/assets/common/css/theme/demo75/assets/common/css/images/icon-check.png*/ no-repeat 10px 7px;
+	}
+ 
+	/* адаптивное меню справа */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+ 
+	/* адаптивное меню по центру */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+	.sl {
+		display:none}
+	.active {
+		width:300px;
+		position:static;
+		
+		}
+	.parallax-layer2 {
+    position: absolute;
+	height:100%;
+	width:300px;
+	}
+	#port {
+			
+			margin: 1em 0px;
+			
+			
+			height: 260px;
+			width:80%
+		}
+		.example .frame ul li{float:left;height:450px;margin:0 10px;padding:0;position:relative;text-align:center;color: #7599A8;
+display:block;
+
+}
+.logo {
+	display:inline-block; margin-left:-20px}
+.pod input {
+	max-width:300px;}
+.pod textarea {
+	max-width:300px;}
+
+ 
+}

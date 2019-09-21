@@ -1,0 +1,63 @@
+- - - - - [19.08.17 15:52:20] - - - - -
+<index> MySQL error: (2006) MySQL server has gone away
+Query: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=0 WHERE cDisabled=0 ORDER BY cID
+- - - - - [20.08.17 16:21:24] - - - - -
+<index> MySQL error: (2006) MySQL server has gone away
+Query: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=0 WHERE cDisabled=0 ORDER BY cID
+- - - - - [20.08.17 18:00:13] - - - - -
+<account/login> Security: Wrong form certificate
+- - - - - [20.08.17 18:01:51 +98] - - - - -
+<account/login> Security: Wrong form certificate
+- - - - - [23.08.17 14:37:48] - - - - -
+<account/login> Security: Wrong form certificate
+- - - - - [23.08.17 19:13:54] - - - - -
+<message/support> Security: Wrong form certificate
+- - - - - [24.08.17 07:56:40] - - - - -
+<balance/wallets> Security: Wrong form certificate
+- - - - - [24.08.17 11:07:30] - - - - -
+<index> MySQL error: (2006) MySQL server has gone away
+Query: SELECT * FROM Currs LEFT JOIN Wallets ON wcID=cID and wuID=0 WHERE cDisabled=0 ORDER BY cID
+<cron> MySQL error: (2006) MySQL server has gone away
+Query: UPDATE Currs SET `cBal`='4356.18',`cBalTS`='20170824110733' WHERE cCID='PYR'
+- - - - - [25.08.17 20:15:39] - - - - -
+<balance/oper> Security: Wrong form certificate
+- - - - - [26.08.17 15:53:31] - - - - -
+<ajax> Ajax: Module not defined
+- - - - - [30.08.17 11:57:11] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 11:59:48] - - - - -
+<balance/admin/curr> Security: Wrong form certificate
+- - - - - [30.08.17 12:00:43 +55] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 12:01:00 +17] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 12:01:38 +38] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 12:14:45] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 12:25:06] - - - - -
+<news> MySQL error: Connection not opened
+<news> DBInit: Can't open MySQL database
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 12:27:41] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [30.08.17 12:42:45] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [04.09.19 06:26:15] - - - - -
+<system/admin/setup_ui> Security: Wrong form certificate
+- - - - - [13.09.19 11:30:57] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database
+- - - - - [20.09.19 10:32:44] - - - - -
+<index> MySQL error: Connection not opened
+<index> DBInit: Can't open MySQL database

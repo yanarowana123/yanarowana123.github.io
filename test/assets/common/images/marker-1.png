@@ -1,0 +1,965 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title><?php echo escape($name_project); ?></title>
+<base href="https://btcearned.com/" src="https://btcearned.com/" />
+<link rel="stylesheet" type="text/css" href="css/5.css"/>
+<link rel="shortcut icon" href="images/favi.png">
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+<script src='js/jquery-1.11.3.min.js'></script>
+<script src='js/wow.js'></script>
+    <link rel="stylesheet"  href="css/lightslider.css"/>
+    <script src="js/lightslider.js"></script>
+    
+<script>
+    wow = new WOW();
+    wow.init(); 
+</script>
+
+
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:1000,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+
+
+</head>
+<body>
+<div id="main-header">
+	<div id="sub-header">
+    	<div class="logo bounceInLeft animated wow">
+        	<a href="https://btcearned.com/home"><img src="images/btcearned.png"/></a>
+        </div>
+        <div class="menu">
+             <ul>
+            	<li><a href="https://btcearned.com/home" class="hover-active">Home</a></li>
+                               <li><a href="https://btcearned.com/signup">Register</a></li>
+               <li><a href="https://btcearned.com/login">Login</a></li>
+               <li><a href="https://btcearned.com/cust/page/bitcoin">What is Bitcoin?</a></li>
+                <li><a href="https://btcearned.com/cust/page/getstart">Get Started</a></li>
+                     
+                <li><a href="https://btcearned.com/cust/page/affiliate">Affiliate Program</a></li>
+                <li><a href="https://btcearned.com/faq">FAQ</a></li>
+                <li><a href="https://btcearned.com/support">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+<div id="main-slider">
+   <div id="sub-slider">
+<div class="sub-bg">
+        <div class="welcome bounceIn animated wow"data-wow-duration="1.5s" data-wow-delay="0.6s" style="visibility: visible;animation-duration: 1.5s;">
+        	<h1>BitCoin : a way to enhance returns</h1> 
+        </div>
+        <div class="wellcome-text fadeIn animated wow"data-wow-duration="2s" data-wow-delay="0.3s" style="visibility: visible;animation-duration: 1.5s;">
+        	<p>In addition to helping mitigate downside risk, an investment in Bitcoin can also enhance anyone's portfolio returns. In our low-rate and slow-growth environment, investors have been looking to alternative assets to boost returns. An alternative asset to consider adding to a portfolio is Bitcoin.</p>
+        </div>
+
+
+        <div class="login-register">
+        	<div class="login bounceInLeft animated wow"data-wow-duration="2s" data-wow-delay="0.5s" style="visibility: visible;animation-duration: 1.5s;">
+                        	<a href="https://btcearned.com/login" class="a-link">LOG IN</a>            </div>
+            <div class="register bounceInRight animated wow"data-wow-duration="2s" data-wow-delay="0.5s" style="visibility: visible;animation-duration: 1.5s;">            	<a href="https://btcearned.com/signup" class="a-link">CREATE AN ACCOUNT</a>            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+<div class="clr"></div>
+<div id="main-companyy">
+	<div id="sub-company">
+    	<div class="company-head slideInLeft animated wow">
+            <h4>Diversify Your Investment Portfolio by adding Bitcoin</h4>
+            <img src="images/invest.png"/ height="3" width="100%"/>
+        </div>
+        <div class="about-text">
+        	<p><img class="about-home-img" src="images/about-images.jpg"/> Bitcoin has turned out to be the emerging digital asset that is revolutionizing the way we think about money, payments, and transfer of assets. Bitcoin's unique selling point as a digital asset is that it transfers value in a secure way via a distributed and decentralized network. Numerous financial industry executives, technologists, and media men have chronicled the potential viability and success of Bitcoin, including the power of its ledger system, the infrastructure of a new payments rail, and its ability to store value. Governments around the world have also provided preliminary structures and frameworks for the regulation of digital currency transactions, bolstering the emerging technology's legitimacy. With all these factors helping to support the growth of Bitcoin, now is the time for smart investors to consider allocating a portion of their portfolio to this really unique asset.</p>
+        </div>
+        <div class="readmore slideInRight animated wow">
+        	<a href="https://btcearned.com/cust/page/about" class="a-link">Read About Revolutionary Asset</a>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+<div id="main-plan">
+	<div id="sub-plan">
+    	<div class="plan-head">
+            <h3><?php echo escape($name_project); ?> Plans</h3>
+            <img src="images/invest.png" height="3" width="100%"/>
+        </div>
+        <div class="plan-up">
+        	<div class="plan-one flipInY animated wow"data-wow-duration="2s" data-wow-delay="0.4s" style="visibility: visible;animation-duration: 1.5s;">
+            	<div class="plan-box">
+                	<div class="head-plan">
+                    	<h3>BTC 1</h3>
+                    </div>
+                    <div class="planbox-mid">
+                    	<div class="plan-left">
+                            <div class="percent">
+                            	<h4>6.0%</h4>
+                            </div>
+                            <div class="days">
+                            	<p>Hourly for</p>
+                            </div>
+                            <div class="days">
+                            	<p>18 hours</p>
+                            </div>
+                        </div>
+                        <div class="plan-right">
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Min: $10</p>
+                            </div>
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  Max: $99</p>
+                            </div>
+                            <!--<div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  $10.8 Total Return</p>
+                            </div>-->
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Instant Withdraw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-calcu">
+                      <a href="https://btcearned.com/signup" class="a-link">Invest Now</a>                </div>
+            </div>
+            <div class="plan-one flipInY animated wow"data-wow-duration="2s" data-wow-delay="0.8s" style="visibility: visible;animation-duration: 1.5s;">
+            	<div class="plan-box">
+                	<div class="head-plan">
+                    	<h3>BTC 2</h3>
+                    </div>
+                    <div class="planbox-mid">
+                    	<div class="plan-left">
+                        	<div class="percent">
+                            	<h4>10%</h4>
+                            </div>
+                            <div class="days">
+                            	<p>Hourly for</p>
+                            </div>
+                            <div class="days">
+                            	<p>12 hours</p>
+                            </div>
+                        </div>
+                        <div class="plan-right">
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Min: $100</p>
+                            </div>
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  Max: $249</p>
+                            </div>
+                            <!--<div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  $120 Total Return</p>
+                            </div>-->
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Instant Withdraw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-calcu">
+                      <a href="https://btcearned.com/signup" class="a-link">Invest Now</a>                </div>
+            </div>
+            <div class="plan-one flipInY animated wow"data-wow-duration="2s" data-wow-delay="1.2s" style="visibility: visible;animation-duration: 1.5s;">
+            	<div class="plan-box">
+                	<div class="head-plan">
+                    	<h3>BTC 3</h3>
+                    </div>
+                    <div class="planbox-mid">
+                    	<div class="plan-left">
+                        	<div class="percent">
+                            	<h4>20%</h4>
+                            </div>
+                            <div class="days">
+                            	<p>Hourly for</p>
+                            </div>
+                            <div class="days">
+                            	<p>6 Hours</p>
+                            </div>
+                        </div>
+                        <div class="plan-right">
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Min: $250</p>
+                            </div>
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  Max: $499</p>
+                            </div>
+                             <!--<div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  $300 Total Return</p>
+                            </div>-->
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Instant Withdraw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-calcu">
+                     <a href="https://btcearned.com/signup" class="a-link">Invest Now</a>                </div>
+            </div>
+        </div><br>
+        <div class="plan-up">
+        	<div class="plan-one flipInY animated wow" data-wow-duration="2s" data-wow-delay="0.4s" style="visibility: visible;animation-duration: 1.5s;">
+            	<div class="plan-box">
+                	<div class="head-plan">
+                    	<h3>BTC 4</h3>
+                    </div>
+                    <div class="planbox-mid">
+                    	<div class="plan-left">
+                            <div class="percent">
+                            	<h4>40%</h4>
+                            </div>
+                           <div class="days">
+                            	<p>Hourly for</p>
+                            </div>
+                            <div class="days">
+                            	<p>3 Hours</p>
+                            </div>
+                        </div>
+                        <div class="plan-right">
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Min: $500</p>
+                            </div>
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  Max: $25000</p>
+                            </div>
+                             <!--<div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  $600 Total Return</p>
+                            </div>-->
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Instant Withdraw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-calcu">
+                      <a href="https://btcearned.com/signup" class="a-link">Invest Now</a>                </div>
+            </div>
+            <div class="plan-one flipInY animated wow"data-wow-duration="2s" data-wow-delay="0.8s" style="visibility: visible;animation-duration: 1.5s;">
+            	<div class="plan-box">
+                	<div class="head-plan">
+                    	<h3>BTC 5</h3>
+                    </div>
+                    <div class="planbox-mid">
+                    	<div class="plan-left">
+                        	<div class="percent">
+                            	<h4>200%</h4>
+                            </div>
+                            <div class="days">
+                            	<p>After 1 Day</p>
+                            </div>
+                        </div>
+                        <div class="plan-right">
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Min: $1000</p>
+                            </div>
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  Max: $25000</p>
+                            </div>
+                           
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Instant Withdraw</p>
+                            </div>
+<div class="planby" style="height:10px;">
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-calcu">
+                      <a href="https://btcearned.com/signup" class="a-link">Invest Now</a>                </div>
+            </div>
+            <div class="plan-one flipInY animated wow"data-wow-duration="2s" data-wow-delay="1.2s" style="visibility: visible;animation-duration: 1.5s;">
+            	<div class="plan-box">
+                	<div class="head-plan">
+                    	<h3>BTC 6</h3>
+                    </div>
+                    <div class="planbox-mid">
+                    	<div class="plan-left">
+                        	<div class="percent">
+                            	<h4>1000%</h4>
+                            </div>
+                            <div class="days">
+                            	<p>After 3 Days</p>
+                            </div>
+                        </div>
+                        <div class="plan-right">
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Min: $5000</p>
+                            </div>
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  Max: $50000</p>
+                            </div>
+                             <!--<div class="planby">
+                                <p><i class="fa fa-check-square-o"></i>  $50000 Total Return</p>
+                            </div>-->
+                            <div class="planby">
+                                <p><i class="fa fa-check-square-o"></i> Instant Withdraw</p>
+                            </div>
+<div class="planby" style="height:10px;">
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-calcu">
+                     <a href="https://btcearned.com/signup" class="a-link">Invest Now</a>                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+<div id="main-refer">
+	<div id="sub-refer">
+    	<div class="refer-text slideInLeft animated wow"data-wow-duration="2s" data-wow-delay="0.4s" style="visibility: visible;animation-duration: 1.5s;">
+        	<img src="images/refeimg.png"/> <p> Earn up to <span>10%</span> by using our 3-tier Affiliate Program!</p>
+        </div>
+        <div class="register-btn slideInRight animated wow"data-wow-duration="3s" data-wow-delay="0.4s" style="visibility: visible;animation-duration: 1.5s;">
+        	<a href="https://btcearned.com/cust/page/affiliate" class="a-link">Learn more</a>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+<div id="main-features">
+	<div id="sub-features">
+    	<div class="plan-head">
+        	<h3>Why <?php echo escape($name_project); ?>?</h3>
+            <img src="images/invest.png" height="3" width="100%"/>
+        </div>
+        <div class="fetures-all">
+        	<div class="features-left">
+            	<div class="features-one slideInLeft animated wow"data-wow-duration="2s" data-wow-delay="0.5s" style="visibility: visible;animation-duration: 1.5s;">
+                	<div class="fe-left">
+                    	<div class="fe-head">
+                        	<h5>Legal Company</h5>
+                        </div>
+                        <div class="fe-text">
+                        	<p><?php echo escape($name_project); ?> is an officially registered company (UK Company No.10128716).</p>
+                        </div>
+                    </div>
+                    <div class="fe-icon">
+                       <img src="images/company.png"/>
+                    </div>
+                </div>
+                <div class="features-one slideInLeft animated wow"data-wow-duration="2s" data-wow-delay="1.0s" style="visibility: visible;animation-duration: 1.5s;">
+                	<div class="fe-left">
+                    	<div class="fe-head">
+                        	<h5>DDOS Protection</h5>
+                        </div>
+                        <div class="fe-text">
+                        	<p>Distributed Denial of Service attack is a silent destructive force that can affect anyone's business. That's why we guard ourselves with one the best solution around- DDOS Guard.</p>
+                        </div>
+                    </div>
+                    <div class="fe-icon">
+                       <img src="images/ddos-g.png"/>
+                    </div>
+                </div>
+                <div class="features-one slideInLeft animated wow"data-wow-duration="2s" data-wow-delay="1.5s" style="visibility: visible;animation-duration: 1.5s;">
+                	<div class="fe-left">
+                    	<div class="fe-head">
+                        	<h5>Exceptional Support</h5>
+                        </div>
+                        <div class="fe-text">
+                        	<p>All requests & additional questions from our clients are dealt with in a professional manner.</p>
+                        </div>
+                    </div>
+                    <div class="fe-icon">
+                       <img src="images/support.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="round zoomIn animated wow" data-wow-duration="3s" data-wow-delay="0.5s" style="visibility: visible;animation-duration: 1.5s;">
+                <div class="clock">
+                </div>
+                <div class="clockye">
+                </div>
+                <div class="clock-text">
+                	<h1 style="font-size:95px;!important"><i class="fa fa-money" aria-hidden="true"></i></h1>
+                </div>
+            </div>
+            <div class="features-right">
+            	<div class="features-one slideInRight animated wow"data-wow-duration="2s" data-wow-delay="0.5s" style="visibility: visible;animation-duration: 1.5s;">
+                	<div class="fea-icon">
+                    	<img src="images/s-panel.png"/>
+                    </div>
+                    <div class="fe-right">
+                    	<div class="fe-head">
+                        	<h5>Secure Control Panel</h5>
+                        </div>
+                        <div class="fe-text">
+                        	<p>Convenient and secure multi-functional control panel, which allows users to easily monitor the status of investment, accounts in real time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-one slideInRight animated wow"data-wow-duration="2s" data-wow-delay="1.0s" style="visibility: visible;animation-duration: 1.5s;">
+                	<div class="fea-icon">
+                    	<img src="images/stable.png"/>
+                    </div>
+                    <div class="fe-right">
+                    	<div class="fe-head">
+                        	<h5>Unique asset</h5>
+                        </div>
+                        <div class="fe-text">
+                        	<p>Bitcoin is a breakthrough in online investments vehicles that has a potential to grow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-one slideInRight animated wow"data-wow-duration="2s" data-wow-delay="1.5s" style="visibility: visible;animation-duration: 1.5s;">
+                	<div class="fea-icon">
+                    	<img style="margin-top: 20px;" src="images/data-en.png"/>
+                    </div>
+                    <div class="fe-right">
+                    	<div class="fe-head">
+                        	<h5>Data Encryption</h5>
+                        </div>
+                        <div class="fe-text">
+                        	<p><?php echo escape($name_project); ?> uses strong encryption level –  SSL featuring cutting-edge 256-bit encryption to secure your data. The security of our site is our number one priority.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clr"><br></div>
+
+<div id="main-statis" >
+	<div id="sub-statis">
+    	<div class="state-head bounceIn  wow animated" data-wow-duration="1s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: bounceIn;">
+        	<h3>LIVE STATISTICS</h3>
+        </div>
+        <img src="images/invest.png" height="3" width="100%"/>
+        <div class="state-all">
+        	<div class="state-one">
+            	<div class="state-up fadeInUp  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Started Day</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>May 23, 2016</p>
+                </div>
+            </div>
+            <div class="state-one">
+            	<div class="state-up fadeInUp  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Running Days</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>3</p>
+                </div>
+            </div>
+            <div class="state-one">
+            	<div class="state-up fadeInUp  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Total Investor</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>620</p>
+                </div>
+            </div>
+            <div class="state-one">
+            	<div class="state-up fadeInUp  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Total Deposited</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>$ 359019.03</p>
+                </div>
+            </div>
+            <div class="state-one">
+            	<div class="state-up fadeInUp  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Total Withdraw</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>$ 39928.45</p>
+                </div>
+            </div>
+            <div class="state-one">
+            	<div class="state-up fadeInUp  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Last Deposit</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>$ 71.37 (fmyaba84)</p>
+                </div>
+            </div>
+<div class="state-one" data-wow-duration="1s">
+            	<div class="state-up fadeInUp  wow animated" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Last Withdraw</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>$ 599.60 (lhlhdele)</p>
+                </div>
+            </div>
+           <div class="state-one" data-wow-duration="1s">
+            	<div class="state-up fadeInUp  wow animated" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                	<p>Last Update</p>
+                </div>
+                <div class="state-middle">
+                	<img src="images/state.png" height="auto" width="100%">
+                </div>
+                <div class="state-down fadeInDown  wow animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInDown;">
+                	<p>May 26, 2016</p>
+                </div>
+            </div>
+                        </div>
+        </div>
+    </div>
+<div class="clr"><br></div>
+<div id="main-investor">
+    <div id="sub-investor">
+    	<div class="invest-one flipInX animated wow"data-wow-duration="2s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1.5s;">
+            <div class="invest-head">
+            <table width="100%"><tr><td width="50%">
+            	<h4>Last Deposit</h4></td>
+                <td width="50%">
+            	<h4>Last Withdraw</h4></td>
+                </tr></table>
+            </div>
+            <div class="invest-all-2">
+              <table width="100%">
+              <tr>
+             <td width="50%" valign="top">
+   <!-- Image Table: Start -->
+<table width=100% class="tabb">
+<tr>
+<th class=inheader>Username</td>
+<th class=inheader>Amount</td>
+<th class=inheader width="40">Payment</td>
+</tr>
+<tr>
+<td class=menutxt>fmyaba84</td>
+ <td class=menutxt>$71.37</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>volhebnik</td>
+ <td class=menutxt>$48.35</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>VentureCapital</td>
+ <td class=menutxt>$21.60</td>
+ <td class=menutxt><img src="images/43.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>Wahyu</td>
+ <td class=menutxt>$6000.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>betdh</td>
+ <td class=menutxt>$14.00</td>
+ <td class=menutxt><img src="images/18.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>r7871245</td>
+ <td class=menutxt>$50000.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>r7871245</td>
+ <td class=menutxt>$50000.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+<tr>
+<td class=menutxt>r7871245</td>
+ <td class=menutxt>$50000.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+</tr>
+</table>
+              
+              </td>
+              <td width="50%" valign="top">
+              <!-- Image Table: Start -->
+<table cellspacing=0 cellpadding=2 border=0 width=100% class="tabb">
+<tr>
+<th class=inheader>Username</td>
+<th class=inheader>Amount</td>
+<th class=inheader width="40">Payment</td>
+</tr>
+<tr>
+<td class=menutxt>lhlhdele</td>
+ 
+ <td class=menutxt>$599.60</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>walemisi</td>
+ 
+ <td class=menutxt>$501.91</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>Tembeka</td>
+ 
+ <td class=menutxt>$19.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>piyl0126</td>
+ 
+ <td class=menutxt>$12.59</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>fmyaba84</td>
+ 
+ <td class=menutxt>$53.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>worldww</td>
+ 
+ <td class=menutxt>$20.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>worldww</td>
+ 
+ <td class=menutxt>$10.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+<tr>
+<td class=menutxt>worldww</td>
+ 
+ <td class=menutxt>$30.00</td>
+ <td class=menutxt><img src="images/57.png" align="absmidle" hspace="1"></td>
+ 
+ 
+</tr>
+</table>
+</td>
+              </tr></table>
+			</div>
+        </div>
+
+<script type="text/javascript">
+			
+				function showCalc() {
+					$('#popup-calc').show(500, null);
+				}
+				
+				function hideCalc() {
+					$('#popup-calc').hide(500, null);
+				}		
+				
+				function calcWithCrowd(amount, crowd, percent, days) {
+					var profit = 0;					
+					for (i = 0; i < days; ++i) {
+						var day_profit = (amount * percent / 100);
+						profit = profit + day_profit;
+						amount = amount + (day_profit * crowd / 100);
+					}					
+					return profit;					
+				}
+
+				function calculateProfit() {
+					var amount = parseInt($('#popup-calc-amount').val());
+					var plan = $('#popup-calc-plan').val();
+					var crowdfunding = parseInt($('#popup-calc-crowdfunding').val());
+					var profitElement = $('#popup-calc-profit');
+					var profitPElement = $('#popup-calc-profit-p');  
+					
+					var profit = 0;					
+					
+					switch (plan) {
+						case '1':
+							profit = calcWithCrowd(amount, crowdfunding, 6, 18);
+							break;
+						case '2':
+							profit = calcWithCrowd(amount, crowdfunding, 10, 12);
+							break;
+						case '3':
+							profit = calcWithCrowd(amount, crowdfunding, 20, 6);
+							break;
+						case '4':
+							profit = calcWithCrowd(amount, crowdfunding, 40, 3);
+							break;
+						case '5':
+							profit = calcWithCrowd(amount, crowdfunding, 200, 1);
+							break;
+						case '6':
+							profit = calcWithCrowd(amount, crowdfunding, 1000, 1);
+							break;
+						case '7':
+							profit = amount + amount * 3;
+							break;
+					}
+					
+					var profitP = 0;
+					profitP = profit * 100 / amount;
+					
+					profit = profit.toFixed(2);
+					profitElement.val(profit);
+					
+					profitP = profitP.toFixed(2);
+					profitPElement.val(profitP);
+				}
+				
+				function hideCalcMessage() {
+					elem = $('#popup-calc-message');
+					elem.hide(250, null);
+				}
+				function showCalcMessage(message) {
+					elem = $('#popup-calc-message');
+					elem.text(message);
+					elem.show(250, null);
+					setTimeout(hideCalcMessage, 3000);
+				}
+				
+			
+		</script>
+
+        <div class="invest-one flipInX animated wow" data-wow-duration="2s" data-wow-delay="1.2s" style="visibility: visible;animation-duration: 1.5s; width:366px;">
+            <div style="width:346px;" class="invest-head">
+            	<h4>Profit Calculator</h4>
+            </div>
+            <div class="all-testmonial">
+            
+            <div id="popup-calc" style="width:350px; margin-top:10px; margin-left:15px; margin-right:20px;">
+            
+        <form>
+				<ul>
+					<li>
+						<label for="popup-calc-plan">Investment Plans:</label>
+					</li>
+					<li>
+						 <select id="popup-calc-plan" style="width:90%;">
+							<option value="0" >Chose your plan</option>
+							<option value="1" >BTC 1 (6 Hourly for 18 Hours) | $10 Min - $99 Max</option>
+							<option value="2" >BTC 2 (10 Hourly for 12 Hours) | $100 Min - $249 Max</option>
+							<option value="3" >BTC 3 (20 Hourly for 6 Hours) | $250 Min - $499 Max</option>
+							<option value="4" >BTC 4 (40 Hourly for 3 Hours) | $500 Min - $25000 Max</option>
+                            <option value="5" >BTC 5 (200% After 1 Day) | $1000 Min - $25000 Max</option>
+							<option value="6" >BTC 6 (1000% After 3 Days) | $5000 Min - $50000 Max</option>
+							
+						</select>
+					</li>
+					<li>
+				
+					</li>
+					<li style="display:none;">
+						<select id="popup-calc-crowdfunding">
+							<option value="0" >Not Available</option>
+													
+						</select>
+					</li>
+					<li>
+						<label for="popup-calc-amount">Amount:</label>
+					</li>
+					<li>
+						<input id="popup-calc-amount" type="text" style="width:90%;"/>
+					</li>
+					<label>
+<p id="popup-calc-message" style="color: red; font-size: 12px; display: none; padding-left:2px;"></p>
+					</label>
+					<li>
+						<label for="popup-calc-profit">Total Profit in $:</label>
+					</li>
+					<li>
+						<input id="popup-calc-profit" type="text" style="width:90%;"/>
+					</li>
+					<li>
+						<label for="popup-calc-profit-p">Total Profit in %:</label>
+					</li>
+					<li>
+			<input id="popup-calc-profit-p" type="text" style="width:90%;"/>
+					</li>
+					<li><br>
+						<input type="button" value="Calculate" onclick="calculateProfit();" style="width:95%; margin-top:6px;"/> 
+					</li>
+				</ul>
+			</form></div>
+            </div>
+        </div>
+    </div></div>
+<div class="clr"></div>
+<div id="main-footer">
+	<div id="sub-footer">
+    	<div class="footer-up">
+        	<div style="width: 780px;" class="footer-one">
+            	<div class="footer-head">
+                	<h4>quick links</h4>
+                    <img src="images/invest.png" width="100%" height="3"/>
+                </div>
+                <div class="fo-menu">
+                    <div class="menu-fo">
+                    	<ul>
+                            <li><a href="https://btcearned.com/home"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+                                                        <li><a href="https://btcearned.com/signup"><i class="fa fa-chevron-right" aria-hidden="true"></i> Register</a></li><li><a href="https://btcearned.com/login"><i class="fa fa-chevron-right" aria-hidden="true"></i> Login</a></li>                            <li><a href="https://btcearned.com/cust/page/about"><i class="fa fa-chevron-right" aria-hidden="true"></i> Bitcoin Gains</a></li>
+                            <li><a href="https://btcearned.com/faq"><i class="fa fa-chevron-right" aria-hidden="true"></i> FAQ</a></li>
+                            <li><a href="https://btcearned.com/rules"><i class="fa fa-chevron-right" aria-hidden="true"></i> TOS</a></li>
+                            <li><a href="https://btcearned.com/news"><i class="fa fa-chevron-right" aria-hidden="true"></i> News</a></li>                            <li><a href="https://btcearned.com/support"><i class="fa fa-chevron-right" aria-hidden="true"></i> Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 318px;float: right;" class="footer-one">
+            	<div class="footer-head">
+                	<h4>payment accepted</h4>
+                    <img src="images/invest.png" width="100%" height="3"/>
+                </div>
+                <div class="payment-up">
+               <div style="padding:0px;" class="security-system">
+                   <a style="cursor:pointer;"><img src="images/payment2.png" style="margin-top:-13px;" /></a>
+               </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-footer-2">
+	<div id="sub-footer-2">
+        <div class="footer-down">
+        	<div class="reserved">
+            	<p>COPYRIGHT © 2016 <?php echo escape($name_project); ?>. ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="finish-right">
+            	
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+			
+				$('a.calc-link').on('click', function(event) {
+					event.preventDefault();
+				});
+				
+				$('#popup-calc-plan').on('change', function(event) {
+					planValue = $('#popup-calc-plan').val();
+					crowdElement = $('#popup-calc-crowdfunding');
+					
+					switch (planValue) {
+						case '1':
+						case '2':
+						case '3':
+						case '4':
+						case '5':
+						case '6':
+							crowdElement.removeAttr('disabled');
+							break;
+						case '0':
+						
+						case '7':
+							crowdElement.attr('disabled', 'disabled');
+							crowdElement.val(0);
+							break;
+					}					
+				});
+				
+				$('#popup-calc-amount').on('change', function(event) {
+					planValue = $('#popup-calc-plan').val();
+					amountElement = $('#popup-calc-amount');
+					amountValue = parseInt(amountElement.val());
+					
+					min = 10;
+					max = 500000;
+					
+					switch (planValue) {
+						case '1':
+							min = 10;
+							max = 99;
+							break;
+						case '2':
+							min = 100;
+							max = 249;
+							break;
+						case '3':
+							min = 250;
+							max = 499;
+							break;
+						case '4':
+							min = 500;
+							max = 25000;
+							break;
+						case '5':
+						min = 1000;
+							max = 25000;
+							break;
+						case '6':
+						min = 5000;
+							max = 1000000;
+							break;
+						case '7':
+							min = 99;
+							max = 300000;
+							break;
+					}
+					
+					if (amountValue > max) {
+						//amountElement.val(max);
+						showCalcMessage('A big amount for this plan!');
+					}
+					if (amountValue < min) {
+						//amountElement.val(min);
+						showCalcMessage('A small amount for this plan!');
+					}
+				});
+			
+		</script>
+
+
+</body>
+</html>

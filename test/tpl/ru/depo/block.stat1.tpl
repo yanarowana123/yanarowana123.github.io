@@ -1,0 +1,3 @@
+{strip}
+  {$stat.users}
+{/strip}

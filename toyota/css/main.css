@@ -108,6 +108,7 @@ transition: 2s;
     width: 100%;
     margin-top:60px;
     margin-bottom: 60px;
+  
   }
   #range:focus {
     outline: none;
@@ -223,8 +224,7 @@ transition: 2s;
     position: relative;
     z-index: 1000;
     display: block;
-    margin-left: -
-    margin-top:30px;60px;
+    margin-left:-40px;
     transition:2s;
 
 }

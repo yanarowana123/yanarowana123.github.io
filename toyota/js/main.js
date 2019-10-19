@@ -26,7 +26,18 @@ $(function() {
           },
       
         // focusOnSelect: true,
-        infinity: true
+        infinity: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings:{
+              slidesToShow:3,
+              centerPadding: '100px',
+              infinity: false
+            }
+          }
+        ]
+      
     
     })
 

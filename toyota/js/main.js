@@ -15,8 +15,11 @@ $(function() {
 
     $('.slider-wrapper').slick({
      centerMode: true,
-        centerPadding: '235px',
-        slidesToShow: 2.35,
+        // centerPadding: '235px',
+        centerPadding: '85px',
+
+        // slidesToShow: 2.35,
+        slidesToShow: 2.1,
         slidesToScroll:1,
         arrows: false, 
         dots:false,
@@ -29,11 +32,10 @@ $(function() {
         infinity: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 900,
             settings:{
-              slidesToShow:3,
-              centerPadding: '100px',
-              infinity: false
+              centerPadding: '0px'
+              
             }
           }
         ]

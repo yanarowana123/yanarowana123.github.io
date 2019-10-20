@@ -16,10 +16,10 @@ $(function() {
     $('.slider-wrapper').slick({
      centerMode: true,
         // centerPadding: '235px',
-        centerPadding: '85px',
+        centerPadding: '10px',
 
         // slidesToShow: 2.35,
-        slidesToShow: 2.1,
+        slidesToShow: 2.05,
         slidesToScroll:1,
         arrows: false, 
         dots:false,

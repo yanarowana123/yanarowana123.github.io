@@ -62,7 +62,7 @@ h4 {
 }
 
 .slick-track {
-    display: flex;
+    display: flex !important;
     align-items: center;
     
 }
@@ -104,15 +104,19 @@ h4 {
     margin-top: 40px;
 }
 
-
+.slick-list {
+    /* margin: 0 -240px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px !important;
+}
 
 
 
 .slick-center {
-    /* width: 440px !important; */
-   /* width: 20% !important; */
-   margin-left:-170px;
-   
+   margin-left: -1.5%;
+    
   
 }
 
@@ -129,6 +133,7 @@ h4 {
     height: 280px;
     position: relative;
     z-index: 1300;
+    margin-left: -70px;
 }
 
 .slick-center .slider-item__text {
@@ -147,17 +152,9 @@ h4 {
 
 
 
-.slick-slide {
-    /* margin: 0 70px; */
-   
-    
-}
 
-.slick-list {
-    /* margin: 0 -240px; */
-    
-    padding-top: 100px !important;
-}
+
+
 
 #range {
     -webkit-appearance: none;

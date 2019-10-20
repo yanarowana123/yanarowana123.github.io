@@ -47,10 +47,7 @@ $(function() {
     
     })
 
-    let yaris = $('.yaris');
-    let corolla = $('.corolla');
-    let chr = $('.c-hr');
-    let chr2000 = $('.c-hr');
+    
     let price = $('.header-price__text');
     let title = $('.about__title');
     let description = $('.about__text');
@@ -68,7 +65,7 @@ $(function() {
       }
       else if(y.hasClass('c-hr')){
         $('.c-hr .slider-item__img').attr('src','img/car3active.png');
-        price.text('От 1199 в месяц');
+        price.text('От 1199 шекелей в месяц');
         title.text('Toyota C-HR Hibrid');
         description.text('Оригинальный, яркий и смелый кроссовер Toyota C-HR Hybrid, безусловный «хит» на дорогах Израиля. Toyota C-HR построен на основе уникальной модульной архитектуры TNGA — это новейший подход инженеров Toyota, позволяющий создавать более комфортные, управляемые и безопасные автомобили с ярким, экспрессивным дизайном.')
       }

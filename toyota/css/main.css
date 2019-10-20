@@ -137,15 +137,15 @@ h4 {
 
 .slick-center .slider-item__img {
     width: 590px;
-    height: 280px;
+    height: 380px;
     position: relative;
     z-index: 1300;
     margin-left: -70px;
 }
 
 .slick-center .ttt {
-    width: 900px;
-    height: 350px;
+    width: 800px;
+    height: 450px;
     margin-left: -150px;
     margin-top: -30px;
     margin-bottom: -30px;

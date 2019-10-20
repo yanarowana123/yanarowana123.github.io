@@ -35,7 +35,7 @@ $(function() {
         infinity: true,
         responsive: [
           {
-            breakpoint: 450,
+            breakpoint: 800,
             settings:{
               slidesToShow:1.7,
               centerPadding: '0px'
@@ -60,6 +60,8 @@ $(function() {
       let y =x.children().children();
      
       if(y.hasClass('yaris')){
+        console.log(y);
+        $('.yaris .slider-item__img').attr('src','img/car2active.png');
         price.text('От 699 шекелей в месяц');
         title.text('Toyota Yaris Hibrid');
         description.text('Этот автомобиль заряжает энергией города! Он тихий и умный, легкий и надежный! Путешествуйте по городу на электричестве до 50% всего времени в пути без подзарядки — начните ездить по-новому! ')

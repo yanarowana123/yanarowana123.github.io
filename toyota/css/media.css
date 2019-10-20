@@ -352,7 +352,7 @@
     }
 
     .slider-item__text {
-        font-size: 1rem;
+        font-size: .8rem;
         margin-top: 10px;
     }
 
@@ -364,12 +364,19 @@
 
     }
     
+    .yaris{
+        /* margin-right: 70px;; */
+    }
 
     .slick-slide{
-     
+        /* margin:0 40px; */
+       
+    }
+    .slick-list{
+        /* margin:0 -40px; */
     }
     .slick-center{
-        
+        /* margin-left: -70px; */
     }
 
     .slick-center .slider-item {

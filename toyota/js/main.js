@@ -37,7 +37,7 @@ $(function() {
           {
             breakpoint: 450,
             settings:{
-              slidesToShow:1,
+              slidesToShow:1.7,
               centerPadding: '0px'
               
             }
@@ -58,6 +58,7 @@ $(function() {
     $('.slider-wrapper').on('afterChange',function(e,slick,currentSlide){
       let x =$('.slick-center');
       let y =x.children().children();
+     
       if(y.hasClass('yaris')){
         price.text('От 699 шекелей в месяц');
         title.text('Toyota Yaris Hibrid');

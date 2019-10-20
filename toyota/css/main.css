@@ -70,7 +70,7 @@ h4 {
  
     max-width: 325px;
     height: 438px;
-    padding-top: 86px;
+    padding-top: 146px;
     background: black;
     background: linear-gradient(230deg, transparent 50px, black 0);
     border: 4px solid #fff;
@@ -132,12 +132,12 @@ h4 {
      max-width: 485px !important;
     
      
-    padding-top: 180px;
+    padding-top: 200px;
 }
 
 .slick-center .slider-item__img {
     width: 590px;
-    height: 380px;
+    height: 410px;
     position: relative;
     z-index: 1300;
     margin-left: -70px;

@@ -57,7 +57,7 @@ $(function() {
       let y =x.children().children();
      
       if(y.hasClass('yaris')){
-        console.log(y);
+    
         $('.yaris .slider-item__img').attr('src','img/car2active.png');
         price.text('От 699 шекелей в месяц');
         title.text('Toyota Yaris Hibrid');

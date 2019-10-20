@@ -16,7 +16,7 @@ $(function() {
     $('.slider-wrapper').slick({
      centerMode: true,
         // centerPadding: '235px',
-        centerPadding: '10px',
+        centerPadding: '0px',
 
         // slidesToShow: 2.35,
         slidesToShow: 2.05,

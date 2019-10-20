@@ -374,13 +374,3 @@
 
 }
 
-@media (max-width:370px){
-    .slick-slide{
-        margin-left: -30px;
-       
-    }
-    .slick-center{
-       margin-left: -50px;
-    }
-} 
-

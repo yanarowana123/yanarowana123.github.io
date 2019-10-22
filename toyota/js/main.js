@@ -47,7 +47,10 @@ $(function() {
     
     })
 
-    
+    let yaris = $('.yaris');
+    let corolla = $('.corolla');
+    let chr = $('.c-hr');
+    let chr2000 = $('.c-hr');
     let price = $('.header-price__text');
     let title = $('.about__title');
     let description = $('.about__text');
@@ -57,15 +60,15 @@ $(function() {
       let y =x.children().children();
      
       if(y.hasClass('yaris')){
-    
-        $('.yaris .slider-item__img').attr('src','img/car2active.png');
+        console.log(y);
+     
         price.text('От 699 шекелей в месяц');
         title.text('Toyota Yaris Hibrid');
         description.text('Этот автомобиль заряжает энергией города! Он тихий и умный, легкий и надежный! Путешествуйте по городу на электричестве до 50% всего времени в пути без подзарядки — начните ездить по-новому! ')
       }
       else if(y.hasClass('c-hr')){
-        $('.c-hr .slider-item__img').attr('src','img/car3active.png');
-        price.text('От 1199 шекелей в месяц');
+     
+        price.text('От 1199 в месяц');
         title.text('Toyota C-HR Hibrid');
         description.text('Оригинальный, яркий и смелый кроссовер Toyota C-HR Hybrid, безусловный «хит» на дорогах Израиля. Toyota C-HR построен на основе уникальной модульной архитектуры TNGA — это новейший подход инженеров Toyota, позволяющий создавать более комфортные, управляемые и безопасные автомобили с ярким, экспрессивным дизайном.')
       }

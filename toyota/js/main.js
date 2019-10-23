@@ -19,10 +19,10 @@ $(function() {
     $('.slider-wrapper').slick({
      centerMode: true,
         // centerPadding: '235px',
-        centerPadding: '0px',
+        centerPadding: '100px',
 
         // slidesToShow: 2.35,
-        slidesToShow: 3,
+        slidesToShow: 1.7,
         slidesToScroll:1,
         arrows: false, 
         dots:false,
@@ -38,7 +38,15 @@ $(function() {
             breakpoint: 800,
             settings:{
               slidesToShow:1.7,
-              centerPadding: '0px'
+              centerPadding: '80px'
+              
+            }
+          },
+          {
+            breakpoint: 450,
+            settings:{
+              slidesToShow:1.7,
+              centerPadding: '10px'
               
             }
           }

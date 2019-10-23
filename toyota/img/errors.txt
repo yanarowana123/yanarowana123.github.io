@@ -1,0 +1,1 @@
+[2019-10-16 23:16:17] layer "New Logo A.M копия": Expected end of input but "\u043A" found.

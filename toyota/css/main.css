@@ -123,10 +123,11 @@ h4 {
 }
 
 
+
 .slick-center .slider-item {
      height: 660px;
      max-width: 485px !important;
-    
+     margin-left: 40px;
      
     padding-top: 140px;
 }
@@ -138,6 +139,12 @@ h4 {
     z-index: 1300;
     margin-left: -70px;
 }
+
+.slick-center .corolla .slider-item__img{
+    height: 340px;
+    margin-top: 40px;
+}
+
 
 .slick-center .ttt {
     width: 800px;

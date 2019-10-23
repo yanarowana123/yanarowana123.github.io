@@ -41,6 +41,11 @@
 
     }
 
+
+    .corolla .slider-item__img{
+        height: 115px;
+    }
+
     .c-hr-2000 {
         padding-top: 110px
     }
@@ -80,8 +85,8 @@
     }
 
     .slick-center .corolla .slider-item__img{
-        height: 210px;
-        margin-top: 30px;
+        height: 195px;
+        margin-top: 45px;
     }
 
     .slick-center .ttt {
@@ -170,9 +175,14 @@
 
     .slider-item__img {
         width: 130px;
-        height: 95px;
+        height: 90px;
         margin-left: 0;
     }
+
+    .corolla .slider-item__img{
+        height: 70px;
+    }
+
 
     .c-hr-2000 {
         padding-top: 100px;
@@ -220,8 +230,8 @@
     }
 
     .slick-center .corolla .slider-item__img{
-        height: 140px;
-        margin-top: 20px;
+        height: 130px;
+        margin-top: 30px;
     }
 
     .slick-center .ttt {
@@ -304,6 +314,9 @@
         width: 100px;
         height: 70px;
     }
+    .corolla .slider-item__img{
+        height: 50px;
+    }
 
 
     .ttt {
@@ -331,25 +344,26 @@
     .slick-center .slider-item {
         height: 250px;
         width: 200px !important;
-        padding-top: 40px;
+        padding-top: 50px;
 
 
     }
 
     .slick-center .slider-item__img {
         width: 240px;
-        height: 170px;
+        height: 160px;
+      
         margin-left: -20px;
     }
 
     .slick-center .corolla .slider-item__img{
-        height: 140px;
-        margin-top: 30px;
+        height: 120px;
+        margin-top: 40px;
     }
 
     .slick-center .ttt {
         width: 300px;
-        height: 210px;
+        height: 200px;
         margin-left: -45px;
         margin-bottom: 10px;
 
@@ -384,6 +398,13 @@
 
     }
 
+    .corolla .slider-item__img{
+        height: 45px;
+    }
+
+
+  
+
     .c-hr-2000 {
         padding-top: 45px;
     }
@@ -413,6 +434,7 @@
         height: 225px;
         width: 160px !important;
         padding-top: 40px;
+        margin-left: 20px;
     }
 
     .slick-center .slider-item__img {
@@ -422,8 +444,8 @@
     }
 
     .slick-center .corolla .slider-item__img{
-        height: 110px;
-        margin-top: 20px;
+        height: 95px;
+        margin-top: 35px;
     }
 
     .slick-center .c-hr-2000 {

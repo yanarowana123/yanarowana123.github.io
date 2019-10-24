@@ -116,7 +116,7 @@
     }
 
     .header-price__text {
-        font-size: 20px;
+        font-size: 60px;
     }
 
     
@@ -256,6 +256,11 @@
 
     }
 
+
+    .header-price__text {
+        font-size: 50px;
+    }
+
     .about-outter {
         width: 95%;
     }
@@ -311,6 +316,9 @@
 }
 
 @media (max-width:570px) {
+    .popup-wrapper{
+        width: 100%;
+    }
 
     .slider-item {
         max-width: 100px !important;
@@ -388,6 +396,10 @@
     .slick-center .slider-item__title {
         margin-top: -15px;
 
+    }
+
+    .header-price__text {
+        font-size: 40px;
     }
 
 

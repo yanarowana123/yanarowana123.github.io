@@ -81,6 +81,50 @@ h4 {
 
 }
 
+.slick-btn {
+    position: absolute;
+    font-family: 'icomoon' !important;
+    z-index: 100;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 10em;
+    cursor: pointer;
+
+}
+
+.slick-btn:hover {
+    color:#ffff00;
+    transition: .4s;
+
+}
+
+
+.slick-prev {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.slick-prev:after {
+    content: "\e901";
+}
+
+.slick-next {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+
+}
+
+.slick-next:after {
+    content: "\e900";
+
+}
+
+
+
 
 .slider-item__img {
     width: 385px;
@@ -94,7 +138,10 @@ h4 {
 
 }
 
-.corolla .slider-item__img {
+
+.corolla .slider-item__img,
+.yaris .slider-item__img,
+.corolla-hr .slider-item__img {
     height: 220px;
     margin-top: 20px;
 }
@@ -124,7 +171,6 @@ h4 {
 .slick-slide {
     display: flex !important;
     justify-content: center;
-
 }
 
 
@@ -132,8 +178,6 @@ h4 {
 .slick-center .slider-item {
     height: 660px;
     max-width: 485px !important;
-    margin-left: 40px;
-
     padding-top: 140px;
 }
 
@@ -154,6 +198,18 @@ h4 {
     height: 290px;
     margin-top: 90px;
 }
+
+.slick-center .yaris .slider-item__img {
+    height: 340px;
+    margin-top: 40px;
+}
+
+.slick-center .corolla-hr .slider-item__img {
+    height: 350px;
+    margin-top: 40px;
+}
+
+
 
 
 .slick-center .ttt {
@@ -384,6 +440,7 @@ h4 {
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 70px;
+    text-align: center;
 
 }
 
@@ -599,9 +656,9 @@ form {
 .popup-wrapper {
     width: 50%;
     display: flex;
-    position:absolute;
-    top:50%;
-    transform: translate(0,-50%);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -609,8 +666,8 @@ form {
     height: 40%;
     animation-name: popupopen;
     animation-duration: 1s;
-    padding-right:15px;
-    padding-left:15px;
+    padding-right: 15px;
+    padding-left: 15px;
 
 }
 
@@ -627,7 +684,7 @@ form {
 
 .popup-wrapper p {
     font-size: 1.3rem;
-    margin-top:20px;
+    margin-top: 20px;
     font-weight: 500;
     line-height: 1.2;
     text-align: center;

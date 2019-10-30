@@ -41,10 +41,16 @@
 
     }
 
+    .yaris .slider-item__img,
+    .corolla-hr .slider-item__img {
+        height: 110px;
+    }
 
-    .corolla .slider-item__img{
+
+    .corolla .slider-item__img {
         height: 115px;
     }
+
 
     .c-hr-2000 {
         padding-top: 110px
@@ -76,6 +82,7 @@
         padding-top: 90px;
 
 
+
     }
 
     .slick-center .slider-item__img {
@@ -83,13 +90,21 @@
         height: 250px;
         margin-left: -15px;
     }
-    .slick-center .c-hr .slider-item__img{
+
+    .slick-center .c-hr .slider-item__img {
         height: 210px;
         margin-top: 30px;
     }
-    .slick-center .corolla .slider-item__img{
+
+    .slick-center .corolla .slider-item__img {
         height: 180px;
         margin-top: 60px;
+    }
+
+    .slick-center .yaris .slider-item__img,
+    .slick-center .corolla-hr .slider-item__img {
+        height: 200px;
+        margin-top: 40px;
     }
 
     .slick-center .ttt {
@@ -119,7 +134,7 @@
         font-size: 60px;
     }
 
-    
+
 
     .features-wrapper {
         background: inherit;
@@ -157,7 +172,7 @@
     }
 
 
-    .feedback{
+    .feedback {
         padding-bottom: 100px;
     }
 
@@ -182,10 +197,12 @@
         margin-left: 0;
     }
 
-    .corolla .slider-item__img{
+    .yaris .slider-item__img,
+    .corolla .slider-item__img,
+    .corolla-hr .slider-item__img {
         height: 70px;
-    }
 
+    }
 
     .c-hr-2000 {
         padding-top: 100px;
@@ -219,11 +236,12 @@
         height: 290px;
         width: 210px !important;
         padding-top: 75px;
+        margin-left: 40px;
 
 
     }
 
- 
+
     .slick-center .c-hr-2000 {
         padding-top: 100px;
     }
@@ -233,13 +251,15 @@
         height: 160px;
     }
 
-    .slick-center .c-hr .slider-item__img{
+    .slick-center .c-hr .slider-item__img,
+    .slick-center .yaris .slider-item__img,
+    .slick-center .corolla-hr .slider-item__img {
         height: 150px;
         margin-top: 10px;
     }
 
 
-    .slick-center .corolla .slider-item__img{
+    .slick-center .corolla .slider-item__img {
         height: 120px;
         margin-top: 40px;
     }
@@ -311,12 +331,12 @@
 
     }
 
- 
+
 
 }
 
 @media (max-width:570px) {
-    .popup-wrapper{
+    .popup-wrapper {
         width: 100%;
     }
 
@@ -332,9 +352,18 @@
         width: 100px;
         height: 70px;
     }
-    .corolla .slider-item__img{
+
+    .yaris .slider-item__img,
+    .corolla-hr .slider-item__img {
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .corolla .slider-item__img {
         height: 50px;
     }
+
+
 
 
     .ttt {
@@ -370,18 +399,23 @@
     .slick-center .slider-item__img {
         width: 240px;
         height: 160px;
-      
+
         margin-left: -20px;
     }
 
-    .slick-center .c-hr .slider-item__img{
+    .slick-center .c-hr .slider-item__img {
         height: 140px;
         margin-top: 20px;
     }
 
-    .slick-center .corolla .slider-item__img{
+    .slick-center .corolla .slider-item__img {
         height: 110px;
         margin-top: 50px;
+    }
+
+    .slick-center .corolla-hr .slider-item__img {
+        height: 140px;
+        margin-top: 20px;
     }
 
     .slick-center .ttt {
@@ -395,6 +429,23 @@
 
     .slick-center .slider-item__title {
         margin-top: -15px;
+
+    }
+
+
+
+
+    .slider-item:after {
+
+        width: 80%;
+
+
+    }
+
+    .slick-center .slider-item:before {
+
+        height: 90%;
+
 
     }
 
@@ -425,12 +476,20 @@
 
     }
 
-    .corolla .slider-item__img{
+    .yaris .slider-item__img,
+    .corolla-hr .slider-item__img {
+        height: 55px;
+    }
+
+
+    .corolla .slider-item__img {
         height: 45px;
     }
 
 
-  
+
+
+
 
     .c-hr-2000 {
         padding-top: 45px;
@@ -470,15 +529,23 @@
         margin-left: -25px;
     }
 
-    .slick-center .c-hr .slider-item__img{
+    .slick-center .c-hr .slider-item__img {
         height: 120px;
         margin-top: 10px;
     }
 
-    .slick-center .corolla .slider-item__img{
+    .slick-center .corolla .slider-item__img {
         height: 90px;
         margin-top: 40px;
     }
+
+    .slick-center .yaris .slider-item__img,
+    .slick-center .corolla-hr .slider-item__img {
+        height: 110px;
+        margin-top: 20px;
+    }
+
+
 
     .slick-center .c-hr-2000 {
         padding-top: 70px;
@@ -495,12 +562,21 @@
         margin-top: 13px;
     }
 
+
+    .slick-center .slider-item:before {
+
+        height: 92%;
+
+
+    }
+
     .input-name,
     .input-number {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .input-btn{
+
+    .input-btn {
         padding: 20px 70px;
     }
 
@@ -508,9 +584,9 @@
         height: 450px;
     }
 
-    .features-title{
+    .features-title {
         margin-bottom: 10px;
-        height:150px;   
+        height: 150px;
     }
 
     .features-item {

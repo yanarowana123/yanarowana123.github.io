@@ -50,9 +50,12 @@ class AttendanceController extends Controller
         $mm = Attendance::find()->
         where('YEAR(date)=:year and MONTH(date)=:month') ->
         params(['year' => $year,'month'=>$month]) ->
+            with('user')->
         orderBy('date')->
         asArray()->
         all();
+
+
 //        $rw = Attendance::find()->
 //        where('YEAR(date)=:year and MONTH(date)=:month') ->
 //        params(['year' => $year,'month'=>$month]) ->
@@ -95,7 +98,7 @@ class AttendanceController extends Controller
 
         $month = $get['month'];
         $year=2019;
-        $users = Users::find()->with('attendances')->all();
+
 
         if(empty($get)) {
 
@@ -121,12 +124,12 @@ class AttendanceController extends Controller
 //        ]);
 
         $mm = Attendance::find()->
-                       where('YEAR(date)=:year and MONTH(date)=:month') ->
-                       params(['year' => $year,'month'=>$month]) ->
-
-                       orderBy('date')->
-                       asArray()->
-                       all();
+        where('YEAR(date)=:year and MONTH(date)=:month') ->
+        params(['year' => $year,'month'=>$month]) ->
+        with('user')->
+        orderBy('date')->
+        asArray()->
+        all();
 
 
 

@@ -7,7 +7,8 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
+use app\models\LoginForm as Login;
+use app\models\SignUp;
 use app\models\ContactForm;
 
 class SiteController extends Controller
@@ -72,19 +73,18 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
+        if (!Yii::$app->getUser()->isGuest) {
             return $this->goHome();
         }
 
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        $model = new Login();
+        if ($model->load(Yii::$app->getRequest()->post()) && $model->login()) {
             return $this->goBack();
+        } else {
+            return $this->render('login', [
+                'model' => $model,
+            ]);
         }
-
-        $model->password = '';
-        return $this->render('login', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -98,7 +98,19 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+    public function actionSignup()
+    {
+        $model = new \mdm\admin\models\form\Signup();
+        if ($model->load(Yii::$app->getRequest()->post())) {
+            if ($user = $model->signup()) {
+                return $this->goHome();
+            }
+        }
 
+        return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }
     /**
      * Displays contact page.
      *

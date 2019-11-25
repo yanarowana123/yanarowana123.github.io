@@ -7,6 +7,7 @@ use Yii;
 use app\models\Attendance;
 use app\models\Users;
 use yii\data\ActiveDataProvider;
+use yii\data\ArrayDataProvider;
 use yii\web\Controller;
 
 
@@ -14,15 +15,24 @@ class AttendanceController extends Controller
 {
 
     public function actionIndex(){
+
+        return $this->render('index');
+    }
+
+    public function actionAdminIndex(){
+
+        return $this->render('admin-index');
+    }
+
+    public function actionUpdate(){
         $get = Yii::$app->request->get();
 
         $month = $get['month'];
-        $year = $get['year'];
+        $year=2019;
         $users = Users::find()->all();
 
 
         if(empty($get)) {
-            $year=2019;
             $month=11;
         }
 
@@ -45,7 +55,7 @@ class AttendanceController extends Controller
         asArray()->
         all();
 
-        return $this->render('index',compact('att','users','year','month','date','end','ff','mm'));
+        return $this->render('update',compact('att','users','year','month','date','end','ff','mm'));
     }
 
 
@@ -56,8 +66,6 @@ class AttendanceController extends Controller
 //               where('YEAR(date)=:year and MONTH(date)=:month') ->
 //               params(['year' => $year,'month'=>$month]) ->
 //               all();
-
-
 
         if(empty($att)) {
             $model = new Attendance();
@@ -79,25 +87,16 @@ class AttendanceController extends Controller
         $get = Yii::$app->request->get();
 
         $month = $get['month'];
-        $year = $get['year'];
+        $year=2019;
         $users = Users::find()->with('attendances')->all();
 
-
-
-
         if(empty($get)) {
-            $year=2019;
+
             $month=11;
         }
         $date = "$year-$month-01";
         $end = "$year-$month-" . date('t', strtotime($date));
 
-
-//        $ff = Attendance::find('date')->
-//                               where('YEAR(date)=:year and MONTH(date)=:month') ->
-//                               params(['year' => $year,'month'=>$month]) ->orderBy('date')->
-//                               asArray()->
-//                               all();
         $ff = (new \yii\db\Query())->
             select(['date'])
             ->from('attendance')
@@ -106,14 +105,13 @@ class AttendanceController extends Controller
             ->params(['year' => $year,'month'=>$month])
             ->orderBy('date')-> all();
 
-
-        $dataProvider = new ActiveDataProvider([
-            'query' =>  Attendance::find()->
-            where('YEAR(date)=:year and MONTH(date)=:month') ->
-            params(['year' => $year,'month'=>$month]) ->orderBy('date')->
-            asArray()
-
-        ]);
+//        $dataProvider = new ActiveDataProvider([
+//            'query' =>  Attendance::find()->
+//            where('YEAR(date)=:year and MONTH(date)=:month') ->
+//            params(['year' => $year,'month'=>$month]) ->orderBy('date')->
+//            asArray()
+//
+//        ]);
 
         $mm = Attendance::find()->
                        where('YEAR(date)=:year and MONTH(date)=:month') ->
@@ -126,12 +124,10 @@ class AttendanceController extends Controller
 
 
 
+
         return $this->render('show',compact('att','users','year','month','date',
             'end','ff','er','mm','dataProvider'));
     }
-
-
-
 
 
 

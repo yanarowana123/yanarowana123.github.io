@@ -39,11 +39,11 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Журнал читать', 'url' => ['/attendance/index']],
-            ['label' => 'Журнал редактировать', 'url' => ['/attendance/admin-index']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Журнал', 'url' => ['/attendance/admin-index']],
+            ['label' => 'Редактировать журнал', 'url' => ['/admin/attendance']],
+            ['label' => 'Пользователи', 'url' => ['/rbac/default/index']],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
+            ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')

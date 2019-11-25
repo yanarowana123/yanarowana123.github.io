@@ -1,5 +1,0 @@
-<?php
-
-useLib('geoip2');
-
-?>

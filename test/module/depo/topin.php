@@ -1,1 +1,0 @@
-<?phprequire_once('module/auth.php');setPage('list', $db->fetchIDRows($db->select('Users LEFT JOIN AddInfo ON auID=uID', 	"uLogin, (SELECT SUM(oSum) FROM Opers WHERE ouID=uID AND oOper='GIVE') AS RSUM, auID, aAvatar", '', 0, 'RSUM desc', 10), false, 'uLogin'));showPage();?>

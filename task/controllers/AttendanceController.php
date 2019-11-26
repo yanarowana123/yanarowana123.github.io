@@ -26,10 +26,15 @@ class AttendanceController extends Controller
 
     public function actionUpdate(){
         $get = Yii::$app->request->get();
+        $post = Yii::$app->request->post();
+
+
+
+
 
         $month = $get['month'];
         $year=2019;
-        $users = Users::find()->all();
+        $users = Users::find()->asArray()->all();
 
 
         if(empty($get)) {
@@ -56,38 +61,37 @@ class AttendanceController extends Controller
         all();
 
 
-//        $rw = Attendance::find()->
-//        where('YEAR(date)=:year and MONTH(date)=:month') ->
-//        params(['year' => $year,'month'=>$month]) ->
-//        with('user')->
-//        orderBy('date')->
-//        asArray()->
-//        all();
-
-
         return $this->render('update',compact('att','users','year','month','date','end','ff','mm'));
     }
 
 
     public function actionUpd(){
         $post = Yii::$app->request->post();
-        $att =Attendance::findOne(['user_id'=>$post['user_id'],'date'=>$post['date']]);
-//        $a = Attendance::find()->
-//               where('YEAR(date)=:year and MONTH(date)=:month') ->
-//               params(['year' => $year,'month'=>$month]) ->
-//               all();
+        $att =Attendance::find()->joinWith('user')->
+            where(['user_name'=>$post['user_name'],'date'=>$post['date']])->
+                    one();
+        debug($att);
+        $user_id = Attendance::find()->joinWith('user')->
+        where(['user_name'=>$post['user_name']])->one();
+
+
 
         if(empty($att)) {
             $model = new Attendance();
-            $model->user_id = $post['user_id'];
+
+//            $model->user_name = $post['user_name'];
+            $model->user_id =  $user_id['user_id'];
             $model->date = $post['date'];
             $model->value = $post['selected'];
             $model->save();
+            debug($att);
         } else{
-            $att->user_id = $post['user_id'];
-            $att->date = $post['date'];
+//            $att->user_id = $post['user_id'];
+
+            $att->date= $post['date'];
             $att->value = $post['selected'];
             $att->save();
+            debug($att);
         }
 
     }

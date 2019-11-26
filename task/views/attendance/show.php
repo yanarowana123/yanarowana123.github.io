@@ -5,17 +5,20 @@ use app\models\Attendance;
 use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
 use yii\grid\GridView;
-$students = ArrayHelper::map($mm, 'date', 'value','user_id');
-$ptudents = ArrayHelper::index($mm,'user_id');
+
+$arr =[];
+
+foreach ($mm as $v){
+    $arr[]=['date'=>$v['date'],'value'=>$v['value'],'user_name'=>$v['user']['user_name']];
+}
+$students = ArrayHelper::map($arr, 'date', 'value', 'user_name');
 
 $dataProvider = new \yii\data\ArrayDataProvider([
     'allModels' => $students
 
 ]);
-//debug($mm);
-//debug($students);
-//debug($users);
-//debug($students);
+
+
 
 
 

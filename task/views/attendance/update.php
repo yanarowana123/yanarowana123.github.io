@@ -3,7 +3,18 @@
 
 use yii\helpers\ArrayHelper;
 use yii\grid\GridView;
-$students = ArrayHelper::map($mm, 'date', 'value', 'user_id');
+//$students = ArrayHelper::map($mm, 'date', 'value', 'user_id');
+
+
+$arr =[];
+
+
+foreach ($mm as $v){
+    $arr[]=['date'=>$v['date'],'value'=>$v['value'],'user_name'=>$v['user']['user_name']];
+
+}
+$students = ArrayHelper::map($arr, 'date', 'value', 'user_name');
+
 
 ?>
 <div class="table-responsive table-bordered">
@@ -38,7 +49,7 @@ $students = ArrayHelper::map($mm, 'date', 'value', 'user_id');
                     <td><?=$user['user_name']?></td>
                     <?php
                     for($i=1;$i<$day_count+1;$i++){
-                        echo "<td class=''><select date=\"$i\" data-id=\"$user->user_id\" class='select '><option value=\"Не задано\" >Не задано</option>
+                        echo "<td class=''><select date=\"$i\" user_name=\"$user[user_name]\" class='select '><option value=\"Не задано\" >Не задано</option>
 <option value=\"Был(а)\" >Был(а)</option>
 <option value=\"Не был(а)\">Не был(а)</option> </select> </td>";
                     }
@@ -58,7 +69,7 @@ $students = ArrayHelper::map($mm, 'date', 'value', 'user_id');
 
 
                     <td class="info">
-                        <select date="<?=$i?>"  data-id="<?=$student?>" class='select selectpicker' >
+                        <select date="<?=$i?>"  user_name="<?=$student?>" class='select selectpicker' >
                             <option   <?php if($score[$col[$i-1]]=='Не задано'):?>selected="selected"<?php endif; ?> value="Не задано" >Не задано</option>
                             <option style="background: #5cb85c; color: #fff;" <?php if($score[$col[$i-1]]=='Был(а)'):?>selected="selected"<?php endif; ?> value="Был(а)" >Был(а)</option>
                             <option style="background: red; color: #fff;" <?php if($score[$col[$i-1]]=='Не был(а)'):?>selected="selected"<?php endif; ?> value="Не был(а)">Не был(а)</option> </select>

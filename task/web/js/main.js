@@ -4,7 +4,8 @@ $(document).on('change', '.select', function() {
     let selected = $(this).val();
     let a = '.'+$(this).attr('date');
     let date = $(a).attr('date');
-    let user_id = $(this).data('id');
+    // let user_id = $(this).data('id');
+    let user_name = $(this).attr('user_name');
 
 
     $.ajax({
@@ -12,7 +13,8 @@ $(document).on('change', '.select', function() {
         type: 'POST',
         data: {
             selected:selected,
-            user_id:user_id,
+            // user_id:user_id,
+            user_name:user_name,
             date:date
 
         },
@@ -21,6 +23,7 @@ $(document).on('change', '.select', function() {
         },
         error: function() {
             alert('Error');
+            console.log(data);
         }
     });
 });

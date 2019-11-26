@@ -3,17 +3,39 @@
 
 use yii\helpers\ArrayHelper;
 use yii\grid\GridView;
-//$students = ArrayHelper::map($mm, 'date', 'value', 'user_id');
+
 
 
 $arr =[];
+
+
+$par = [];
+
+
+
+foreach ($users as $user){
+    if(empty($user['attendances'])){
+        $user['attendances']=[0=> ['user_id'=>$user['user_id'],'date'=>'','value'=>'']];
+    }
+    foreach ($user as $us){
+        if(is_array($us)){
+            foreach ($us as $u){
+                $par[]=['user_name'=>$user['user_name'],'date'=>$u['date'],'value'=>$u['value']];
+        }}
+    }
+}
+
+
 
 
 foreach ($mm as $v){
     $arr[]=['date'=>$v['date'],'value'=>$v['value'],'user_name'=>$v['user']['user_name']];
 
 }
-$students = ArrayHelper::map($arr, 'date', 'value', 'user_name');
+
+//$students = ArrayHelper::map($arr, 'date', 'value', 'user_name');
+$students = ArrayHelper::map($par, 'date', 'value', 'user_name');
+
 
 
 ?>

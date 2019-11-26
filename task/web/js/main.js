@@ -23,7 +23,7 @@ $(document).on('change', '.select', function() {
         },
         error: function() {
             alert('Error');
-            console.log(data);
+
         }
     });
 });

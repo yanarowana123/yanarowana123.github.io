@@ -27,22 +27,25 @@ class AttendanceController extends Controller
     public function actionUpdate(){
         $get = Yii::$app->request->get();
         $post = Yii::$app->request->post();
-
-
-
-
-
         $month = $get['month'];
         $year=2019;
-        $users = Users::find()->asArray()->all();
-
-
         if(empty($get)) {
             $month=11;
         }
 
         $date = "$year-$month-01";
         $end = "$year-$month-" . date('t', strtotime($date));
+
+
+//        $users = Users::find()->joinWith('attendances')->
+//        where('YEAR(date)=:year and MONTH(date)=:month') ->
+//        params(['year' => $year,'month'=>$month]) ->
+//        orderBy('date')->asArray()->all();
+
+        $users = Users::find()->joinWith('attendances')->
+       asArray()->
+        all();
+
 
         $ff = (new \yii\db\Query())->
         select(['date'])
@@ -70,11 +73,10 @@ class AttendanceController extends Controller
         $att =Attendance::find()->joinWith('user')->
             where(['user_name'=>$post['user_name'],'date'=>$post['date']])->
                     one();
-        debug($att);
-        $user_id = Attendance::find()->joinWith('user')->
+   ;
+
+        $user_id = Users::find()->
         where(['user_name'=>$post['user_name']])->one();
-
-
 
         if(empty($att)) {
             $model = new Attendance();
@@ -84,7 +86,7 @@ class AttendanceController extends Controller
             $model->date = $post['date'];
             $model->value = $post['selected'];
             $model->save();
-            debug($att);
+
         } else{
 //            $att->user_id = $post['user_id'];
 

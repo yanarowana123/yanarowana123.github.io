@@ -70,12 +70,37 @@ class TeacherController extends NewController{
 
         if (empty($get))
             return '404';
-
-
         if(empty($weekStart)){
-            $weekStart ='2019-'.date('m-d', strtotime('mon this week'));
-            $weekEnd ='2019-'.date('m-d', strtotime('sun this week'));
+            $weekStart =date('Y-m-d', strtotime('mon this week'));
+            $weekEnd =date('Y-m-d', strtotime('sun this week'));
         }
+
+
+        $yearSem = TeachersGroups::find()->where(['subject_id'=>$subject_id])->asArray()->one();
+
+        if(date('m',strtotime($yearSem['date']))=='01'){
+            $yearStart=date('Y',strtotime($yearSem['date']))-1;
+            $yearEnd=date('Y',strtotime($yearSem['date']));
+            $semNum =2;
+        } else{
+            $yearStart=date('Y',strtotime($yearSem['date']));
+            $yearEnd=date('Y',strtotime($yearSem['date']))+1;
+            $semNum =1;
+        }
+
+        if(date('m',strtotime($yearSem['date']))=='01'){
+            $startSem = "$yearEnd-01-21";
+            $endSem = "$yearEnd-05-3";
+
+        } else {
+            $startSem = "$yearStart-09-01";
+            $endSem = "$yearStart-12-15";
+        }
+
+
+
+
+
 
 
         $users = (new Query())->select(['students.student_id','student_fname','student_sname',
@@ -97,6 +122,9 @@ class TeacherController extends NewController{
             ->andWhere(['teacher_id'=>$teacher_id])
             ->andWhere(['status'=>1])
             ->all();
+
+
+
 
 
         $subject = Subjects::findOne($subject_id);
@@ -134,13 +162,12 @@ class TeacherController extends NewController{
             }
         }
 
-        $startSem = "2019-09-01";
 
-        $endSem = "2019-12-15";
 
 
         return $this->render('dates',compact('weekStart',
-        'weekEnd','group_id','users','ff','subject_id','students','startSem','endSem','subject_title','subject'));
+        'weekEnd','group_id','users','ff','subject_id','students','startSem','endSem','subject_title','subject',
+        'yearStart','yearEnd','semNum'));
     }
 
 

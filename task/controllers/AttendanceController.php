@@ -3,6 +3,7 @@
 
 namespace app\controllers;
 
+use app\models\TeachersGroups;
 use Yii;
 
 use app\models\Users;
@@ -52,8 +53,30 @@ class AttendanceController extends NewController
 //            ->andWhere(['between','date',$weekStart,$weekEnd])
             ->all();
 
-        $startSem = "2019-09-01";
-        $endSem = "2019-12-15";
+        $yearSem = TeachersGroups::find()->where(['subject_id'=>$subject_id])->asArray()->one();
+
+        if(date('m',strtotime($yearSem['date']))=='01'){
+            $yearStart=date('Y',strtotime($yearSem['date']))-1;
+            $yearEnd=date('Y',strtotime($yearSem['date']));
+            $semNum =2;
+        } else{
+            $yearStart=date('Y',strtotime($yearSem['date']));
+            $yearEnd=date('Y',strtotime($yearSem['date']))+1;
+            $semNum =1;
+        }
+
+        if(date('m',strtotime($yearSem['date']))=='01'){
+            $startSem = "$yearEnd-01-21";
+            $endSem = "$yearEnd-05-3";
+
+        } else {
+            $startSem = "$yearStart-09-01";
+            $endSem = "$yearStart-12-15";
+        }
+
+        debug($startSem);
+        debug($startSem);
+        debug($endSem);
 
 
 

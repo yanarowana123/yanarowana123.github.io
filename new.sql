@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 09 2019 г., 10:22
+-- Время создания: Дек 09 2019 г., 13:44
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -41,7 +41,15 @@ CREATE TABLE `attendance` (
 --
 
 INSERT INTO `attendance` (`student_id`, `subject_id`, `date`, `value`, `teacher_id`) VALUES
+(1, 1, '2019-09-02', 'Был(а)', 1),
+(1, 1, '2019-09-04', 'Не был(а)', 1),
+(1, 1, '2019-12-04', 'Был(а)', 1),
+(1, 1, '2019-12-05', 'Был(а)', 1),
 (1, 1, '2019-12-06', 'Был(а)', 1),
+(1, 1, '2019-12-09', 'Был(а)', 1),
+(1, 1, '2019-12-10', 'Был(а)', 1),
+(1, 1, '2019-12-12', 'Был(а)', 1),
+(1, 2, '2020-05-01', 'Был(а)', 1),
 (1, 3, '2019-09-03', 'Был(а)', 1),
 (2, 1, '2019-12-06', 'Был(а)', 1),
 (3, 1, '2019-12-06', 'Был(а)', 3),
@@ -310,21 +318,22 @@ INSERT INTO `teachers` (`teacher_id`, `teacher_fname`, `teacher_sname`, `user_id
 CREATE TABLE `teachers_groups` (
   `teacher_id` int(11) NOT NULL,
   `group_id` int(11) NOT NULL,
-  `subject_id` int(11) NOT NULL
+  `subject_id` int(11) NOT NULL,
+  `date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `teachers_groups`
 --
 
-INSERT INTO `teachers_groups` (`teacher_id`, `group_id`, `subject_id`) VALUES
-(1, 1, 1),
-(1, 1, 2),
-(1, 1, 3),
-(1, 2, 3),
-(2, 2, 4),
-(3, 2, 1),
-(4, 3, 6);
+INSERT INTO `teachers_groups` (`teacher_id`, `group_id`, `subject_id`, `date`) VALUES
+(1, 1, 1, '2019-09-01'),
+(1, 1, 2, '2020-01-01'),
+(1, 1, 3, '2019-09-01'),
+(1, 2, 3, '2019-09-01'),
+(2, 2, 4, '2019-09-01'),
+(3, 2, 1, '2019-09-01'),
+(4, 3, 6, '2019-09-01');
 
 -- --------------------------------------------------------
 

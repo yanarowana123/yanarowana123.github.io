@@ -11,6 +11,7 @@
                 if (date('l', strtotime($weekStart)) != 'Saturday' and date('l', strtotime($weekStart)) != 'Sunday') {
 
                     $dates[] = date("Y-m-d", strtotime($weekStart));
+                    $weekStart = date("d-m-Y", strtotime($weekStart));
 
                     echo "<th class='$i'>$weekStart </th>";
                 }

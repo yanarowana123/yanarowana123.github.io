@@ -58,7 +58,7 @@ $('.teacher-week').on('click',function (e) {
 
     e.preventDefault()
 
-    
+
 
     $('.select').each(
         setColor

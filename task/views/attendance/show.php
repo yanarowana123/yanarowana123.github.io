@@ -16,10 +16,10 @@ use yii\helpers\Html;
                     ['class' => 'btn btn-info btn-sm student-week  ml-4',
                         'subject_id'=>$subject_id,
 //                        'group_id'=>$group_id,
-                        'weekstart' => $startSem,
-                        'weekend'=>date("Y-m-d", strtotime("+7 day", strtotime($startSem))),
+                        'weekStart' => $startSem,
+                        'weekEnd'=>date("Y-m-d", strtotime("this week Sun", strtotime($startSem))),
                     ]) ;
-                $startSem = date("Y-m-d", strtotime("+7 day", strtotime($startSem)));
+                $startSem = date("Y-m-d", strtotime("next week Mon", strtotime($startSem)));
             }
             ?>
 

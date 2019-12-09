@@ -4,6 +4,22 @@ use yii\widgets\Pjax;
 
 ?>
 
+<?php
+//
+//$years=[date('Y')];
+//   for($i=1;$i<4;$i++){
+//       $years[]=date('Y',strtotime("+$i year"));
+//   }
+//   debug($years);
+//
+//for($i=1;$i<count($years);$i++){
+//    $f = $i-1;
+//    echo Html::a("$years[$f]-$years[$i]", ['teacher/dates'],
+//        ['class' => 'btn btn-info btn-sm teacher-week  ml-4',
+//        ]) ;
+//}
+
+?>
 
 
 
@@ -11,8 +27,8 @@ use yii\widgets\Pjax;
     <div class="container">
         <div class="row">
 
-            <h1 class="text-center">Учебный год 2019-2020</h1>
-            <h2 class="text-center">Семестр 1</h2>
+            <h1 class="text-center">Учебный год <?="$yearStart-$yearEnd"?></h1>
+            <h2 class="text-center">Семестр <?=$semNum?></h2>
             <h3 class="text-center">Группа <?=$users[0]['group_title']?></h3>
             <h3 class="text-center"><?=$subject->subject_title?></h3>
 
@@ -41,9 +57,9 @@ while(strtotime($startSem)<strtotime($endSem)){
         'subject_id'=>$subject_id,
         'group_id'=>$group_id,
         'weekStart' => $startSem,
-        'weekEnd'=>date("Y-m-d", strtotime("+7 day", strtotime($startSem))),
+        'weekEnd'=>date("Y-m-d", strtotime("this week Sun", strtotime($startSem))),
         ]) ;
-    $startSem = date("Y-m-d", strtotime("+7 day", strtotime($startSem)));
+    $startSem = date("Y-m-d", strtotime("next week Mon", strtotime($startSem)));
 }
 ?>
 

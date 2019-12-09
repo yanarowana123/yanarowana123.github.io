@@ -7,11 +7,15 @@ use Yii;
 /**
  * This is the model class for table "attendance".
  *
- * @property int $user_id
+ * @property int $student_id
+ * @property int $subject_id
  * @property string $date
  * @property string $value
+ * @property int $teacher_id
  *
- * @property Users $user
+ * @property StudentsGroups $student
+ * @property TeachersGroups $subject
+ * @property TeachersGroups $teacher
  */
 class Attendance extends \yii\db\ActiveRecord
 {
@@ -29,12 +33,14 @@ class Attendance extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'date'], 'required'],
-            [['user_id'], 'integer'],
+            [['student_id', 'subject_id', 'date', 'teacher_id'], 'required'],
+            [['student_id', 'subject_id', 'teacher_id'], 'integer'],
             [['date'], 'safe'],
-            [['value'], 'string'],
-            [['user_id', 'date'], 'unique', 'targetAttribute' => ['user_id', 'date']],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['user_id' => 'user_id']],
+            [['value'], 'string', 'max' => 255],
+            [['student_id', 'subject_id', 'date'], 'unique', 'targetAttribute' => ['student_id', 'subject_id', 'date']],
+            [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => StudentsGroups::className(), 'targetAttribute' => ['student_id' => 'student_id']],
+            [['subject_id'], 'exist', 'skipOnError' => true, 'targetClass' => TeachersGroups::className(), 'targetAttribute' => ['subject_id' => 'subject_id']],
+            [['teacher_id'], 'exist', 'skipOnError' => true, 'targetClass' => TeachersGroups::className(), 'targetAttribute' => ['teacher_id' => 'teacher_id']],
         ];
     }
 
@@ -44,17 +50,35 @@ class Attendance extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'user_id' => 'User ID',
+            'student_id' => 'Student ID',
+            'subject_id' => 'Subject ID',
             'date' => 'Date',
             'value' => 'Value',
+            'teacher_id' => 'Teacher ID',
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUser()
+    public function getStudent()
     {
-        return $this->hasOne(Users::className(), ['user_id' => 'user_id']);
+        return $this->hasOne(StudentsGroups::className(), ['student_id' => 'student_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSubject()
+    {
+        return $this->hasOne(TeachersGroups::className(), ['subject_id' => 'subject_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTeacher()
+    {
+        return $this->hasOne(TeachersGroups::className(), ['teacher_id' => 'teacher_id']);
     }
 }

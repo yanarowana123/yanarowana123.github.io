@@ -4,20 +4,20 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Attendance */
+/* @var $model app\models\Students */
 
-$this->title = $model->user_id;
-$this->params['breadcrumbs'][] = ['label' => 'Attendances', 'url' => ['index']];
+$this->title = $model->student_id;
+$this->params['breadcrumbs'][] = ['label' => 'Students', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="attendance-view">
+<div class="students-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'user_id' => $model->user_id, 'date' => $model->date], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'user_id' => $model->user_id, 'date' => $model->date], [
+        <?= Html::a('Update', ['update', 'id' => $model->student_id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Delete', ['delete', 'id' => $model->student_id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -29,9 +29,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'user_id',
-            'date',
-            'value',
+            'student_id',
+            'student_fname',
+            'student_sname',
+            'status',
         ],
     ]) ?>
 

@@ -6,8 +6,8 @@ $db = require __DIR__ . '/db.php';
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
     'language' => 'ru',
+    'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -19,7 +19,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'qweqwe',
-            'baseUrl'=> '',
+            'baseUrl' => ''
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -55,7 +55,6 @@ $config = [
             'rules' => [
             ],
         ],
-
     ],
     'modules' => [
         'admin' => [
@@ -69,21 +68,25 @@ $config = [
                     /* 'userClassName' => 'app\models\User', */
                     'idField' => 'id',
                     'usernameField' => 'username',
-
                 ],
             ],
             'layout' => 'left-menu',
-            'mainLayout' => '@app/views/layouts/admin.php',
+            'mainLayout' => '@app/views/layouts/main.php',
+
         ]
     ],
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
             'site/*',
-//            'admin/*',
-//            'rbac/*',
-//            'attendance/*',
 
+//            'some-controller/some-action',
+
+            // The actions listed here will be allowed to everyone including guests.
+            // So, 'admin/*' should not appear here in the production, of course.
+            // But in the earlier stages of your development, you may probably want to
+            // add a lot of actions here until you finally completed setting up rbac,
+            // otherwise you may not even take a first step.
         ]
     ],
     'params' => $params,

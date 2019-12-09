@@ -1,7 +1,19 @@
-<?
+<?php
 use yii\helpers\Html;
-$months = array('Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль' , 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь' , 'Декабрь' );
+?>
+<div class="user-index">
+    <div class="container">
+        <div class="row">
+            <?php
+            foreach ($subjects as $subject){
 
-foreach ($months as $key=>$month){
-echo Html::a($month, ['attendance/show', 'month' => $key+1], ['class' => 'btn btn-success']) ;
-}
+                echo Html::a($subject['subject_title'], ['attendance/show', 'subject_id'=>$subject['subject_id']],
+                    ['class' => 'btn btn-info btn-sm student-subject  ml-4',
+
+                    ]) ;
+
+            }
+            ?>
+        </div>
+    </div>
+</div>

@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%groups}}`.
  */
-class m191125_092229_create_groups_table extends Migration
+class m191205_183150_create_groups_table extends Migration
 {
     /**
      * {@inheritdoc}
@@ -14,8 +14,8 @@ class m191125_092229_create_groups_table extends Migration
     {
         $this->createTable('{{%groups}}', [
             'group_id' => $this->primaryKey(),
-            'title'=>$this->string()->notNull(),
-            'status'=>$this->boolean()->defaultValue(1)
+            'group_title'=>$this->string()->unique()->notNull(),
+            'group_status'=>$this->boolean()->defaultValue(1)
         ]);
 
 

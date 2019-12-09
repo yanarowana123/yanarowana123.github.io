@@ -11,7 +11,7 @@ use app\models\LoginForm as Login;
 use app\models\SignUp;
 use app\models\ContactForm;
 
-class SiteController extends Controller
+class SiteController extends NewController
 {
     /**
      * {@inheritdoc}

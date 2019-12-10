@@ -5,7 +5,7 @@ use yii\widgets\Pjax;
 ?>
 
 <?php
-//
+
 //$years=[date('Y')];
 //   for($i=1;$i<4;$i++){
 //       $years[]=date('Y',strtotime("+$i year"));
@@ -49,9 +49,17 @@ use yii\widgets\Pjax;
 
 <?php
 
+
+
+if(date('l', strtotime($startSem)) == 'Saturday' or date('l', strtotime($startSem)) == 'Sunday'){
+    $startSem = date("Y-m-d",strtotime("next week Mon",strtotime($startSem)));
+}
+
+
 $n = 0;
 while(strtotime($startSem)<strtotime($endSem)){
     $n++;
+
     echo Html::a("$n неделя", ['teacher/dates'],
         ['class' => 'btn btn-info btn-sm teacher-week  ml-4',
         'subject_id'=>$subject_id,

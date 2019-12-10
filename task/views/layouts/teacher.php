@@ -39,7 +39,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => 'Журнал редактировать', 'url' => ['/teacher/index']],
+            ['label' => 'Журнал редактировать', 'url' => ['/teacher/test']],
             Yii::$app->user->isGuest ? (
             ['label' => 'Login', 'url' => ['/rbac/user/login']]
             ) : (

@@ -9,6 +9,9 @@ use yii\helpers\Html;
                 <h1 class="text-center"><?=$ff[0]['subject_title']?></h1>
             <?php
 
+            if(date('l', strtotime($startSem)) == 'Saturday' or date('l', strtotime($startSem)) == 'Sunday'){
+                $startSem = date("Y-m-d",strtotime("next week Mon",strtotime($startSem)));
+            }
 
             while(strtotime($startSem)<strtotime($endSem)){
                 $n++;

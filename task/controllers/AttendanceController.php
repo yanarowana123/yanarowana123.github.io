@@ -3,6 +3,7 @@
 
 namespace app\controllers;
 
+use app\models\Students;
 use app\models\TeachersGroups;
 use Yii;
 
@@ -17,14 +18,16 @@ class AttendanceController extends NewController
 
 //    public $layout = 'student';
 
-    public function actionIndex(){
 
+
+
+    public function actionIndex(){
 
 
         $student_id =Yii::$app->user->id;
 
         $subjects = (new Query())
-            ->select(['subjects.subject_id','subjects.subject_title'])
+            ->select(['subjects.subject_id','subjects.subject_title','date'])
             ->distinct()
             ->from('subjects')
             ->leftJoin('teachers_groups','teachers_groups.subject_id=subjects.subject_id')
@@ -34,6 +37,8 @@ class AttendanceController extends NewController
             ->all();
 
 
+
+
         return $this->render('index',compact('subjects'));
     }
 
@@ -41,15 +46,38 @@ class AttendanceController extends NewController
         $get = Yii::$app->request->get();
         $student_id =Yii::$app->user->id;
         $subject_id = $get['subject_id'];
-        $weekStart ='2019-'.date('m-d', strtotime('mon this week'));
-        $weekEnd ='2019-'.date('m-d', strtotime('sun this week'));
+
+        $student_id =Students::find()
+            ->where(['user_id'=>$student_id])
+            ->asArray()->one()['student_id'];
+
+
+        $dateSem = (new Query())
+            ->select('date')
+            ->from('teachers_groups')
+            ->leftJoin('students_groups','students_groups.group_id=teachers_groups.group_id')
+            ->where(['subject_id'=>$subject_id,'students_groups.student_id'=>$student_id])
+            ->one()['date'];
+
+        if(date('Y',strtotime($dateSem))=='2020'){
+            $weekStart ='2020-04-27';
+            $weekEnd ='2020-05-01';
+        } else{
+            $weekStart ='2019-'.date('m-d', strtotime('mon this week'));
+            $weekEnd ='2019-'.date('m-d', strtotime('sun this week'));
+
+        }
+
+
+
+
         $ff = (new Query())
             ->select(['attendance.student_id','value','date','subject_title','teacher_fname'])
             ->from('attendance')
             ->leftJoin('subjects','subjects.subject_id=attendance.subject_id')
             ->leftJoin('teachers','teachers.teacher_id=attendance.teacher_id')
             ->leftJoin('students','students.student_id=attendance.student_id')
-            ->where(['attendance.subject_id'=>$subject_id,'students.user_id'=>$student_id])
+            ->where(['attendance.subject_id'=>$subject_id,'students.student_id'=>$student_id])
 //            ->andWhere(['between','date',$weekStart,$weekEnd])
             ->all();
 
@@ -73,10 +101,6 @@ class AttendanceController extends NewController
             $startSem = "$yearStart-09-01";
             $endSem = "$yearStart-12-15";
         }
-
-        debug($startSem);
-        debug($startSem);
-        debug($endSem);
 
 
 

@@ -9,7 +9,6 @@ use yii\helpers\Html;
 
                 echo Html::a($subject['subject_title'], ['attendance/show', 'subject_id'=>$subject['subject_id']],
                     ['class' => 'btn btn-info btn-sm student-subject  ml-4',
-
                     ]) ;
 
             }

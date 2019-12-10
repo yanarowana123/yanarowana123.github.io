@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
@@ -377,7 +377,7 @@ INSERT INTO `teachers_subjects` (`teacher_id`, `subject_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `user`
+-- Пароли:123456 Структура таблицы `user`
 --
 
 CREATE TABLE `user` (
